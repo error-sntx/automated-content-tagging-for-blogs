@@ -1,0 +1,475 @@
+[
+  {
+    "id":"post-1001",
+    "title":"Hardening FastAPI Services: JWT Authentication and Rate Limiting",
+    "body":"<nav><a href='\/'>Home<\/a> > <a href='\/api'>APIs<\/a><\/nav>\n            # Hardening FastAPI Services: JWT Authentication and Rate Limiting\n            In modern API development, securing backend endpoints is paramount. Using FastAPI with Python, we can implement robust OAuth2 bearer token authentication with JSON Web Tokens (JWT).\n            We demonstrate password hashing using passlib and Bcrypt, token expiration validation, and middleware for sliding window rate limiting.\n            Protecting against credential stuffing and brute-force attacks requires careful HTTP status code handling and CORS configuration.\n            <div class='tag-footer'>Tags: python, fastapi, security<\/div>\n            <footer>Share on Twitter | Leave a comment below. Copyright 2025 TechBlog<\/footer>",
+    "cleaned_title":"Hardening FastAPI Services: JWT Authentication and Rate Limiting",
+    "cleaned_body":"# Hardening FastAPI Services: JWT Authentication and Rate Limiting In modern API development, securing backend endpoints is paramount. Using FastAPI with Python, we can implement robust OAuth2 bearer token authentication with JSON Web Tokens (JWT). We demonstrate password hashing using passlib and Bcrypt, token expiration validation, and middleware for sliding window rate limiting. Protecting against credential stuffing and brute-force attacks requires careful HTTP status code handling and CORS configuration. Tags: python, fastapi, security",
+    "combined_text":"Hardening FastAPI Services: JWT Authentication and Rate Limiting Hardening FastAPI Services: JWT Authentication and Rate Limiting # Hardening FastAPI Services: JWT Authentication and Rate Limiting In modern API development, securing backend endpoints is paramount. Using FastAPI with Python, we can implement robust OAuth2 bearer token authentication with JSON Web Tokens (JWT). We demonstrate password hashing using passlib and Bcrypt, token expiration validation, and middleware for sliding window rate limiting. Protecting against credential stuffing and brute-force attacks requires careful HTTP status code handling and CORS configuration. Tags: python, fastapi, security",
+    "word_count":73,
+    "tags":[
+      "Python",
+      "API Development",
+      "Application Security"
+    ],
+    "published_date":"2025-01-15T10:00:00.000",
+    "author":"author_2",
+    "fingerprint":"e6593713f83007d66c3c6383f3add349"
+  },
+  {
+    "id":"post-1031",
+    "title":"Supervised Classification with Scikit-Learn: Pipelines and Hyperparameter Tuning",
+    "body":"<article>\n        <h1>Supervised Classification with Scikit-Learn: Pipelines and Hyperparameter Tuning<\/h1>\n        <p>Building robust machine learning pipelines in Python requires encapsulating feature scaling, categorical encoding, and estimator training into scikit-learn Pipelines. We demonstrate randomized search cross-validation, custom transformers, and metric tracking.<\/p>\n        <p>In this article we step through practical implementation details, code samples, and real-world deployment challenges.<\/p>\n        <footer><p>Tags: Machine Learning, Python<\/p><a href='\/rss'>RSS Feed<\/a><\/footer>\n        <\/article>",
+    "cleaned_title":"Supervised Classification with Scikit-Learn: Pipelines and Hyperparameter Tuning",
+    "cleaned_body":"Supervised Classification with Scikit-Learn: Pipelines and Hyperparameter Tuning Building robust machine learning pipelines in Python requires encapsulating feature scaling, categorical encoding, and estimator training into scikit-learn Pipelines. We demonstrate randomized search cross-validation, custom transformers, and metric tracking. In this article we step through practical implementation details, code samples, and real-world deployment challenges.",
+    "combined_text":"Supervised Classification with Scikit-Learn: Pipelines and Hyperparameter Tuning Supervised Classification with Scikit-Learn: Pipelines and Hyperparameter Tuning Supervised Classification with Scikit-Learn: Pipelines and Hyperparameter Tuning Building robust machine learning pipelines in Python requires encapsulating feature scaling, categorical encoding, and estimator training into scikit-learn Pipelines. We demonstrate randomized search cross-validation, custom transformers, and metric tracking. In this article we step through practical implementation details, code samples, and real-world deployment challenges.",
+    "word_count":52,
+    "tags":[
+      "Machine Learning",
+      "Python"
+    ],
+    "published_date":"2025-01-22T00:00:00.000",
+    "author":"author_6",
+    "fingerprint":"5ec3a0accdcd974b0b7ed4fd172e0a50"
+  },
+  {
+    "id":"post-1002",
+    "title":"Building Scalable Feature Stores with Python and Apache Spark",
+    "body":"<h1>Feature Store Architecture for Machine Learning<\/h1>\n            Managing feature parity between offline training and online inference is a classic challenge in machine learning pipelines.\n            In this guide, we use Python alongside Apache Spark and Delta Lake to compute time-travel aggregations, batch feature vectors, and stream real-time events.\n            We will write reproducible ETL jobs that register schema definitions and publish feature snapshots for model training.\n            <p>Subscribe to our newsletter for more updates!<\/p>",
+    "cleaned_title":"Building Scalable Feature Stores with Python and Apache Spark",
+    "cleaned_body":"Feature Store Architecture for Machine Learning Managing feature parity between offline training and online inference is a classic challenge in machine learning pipelines. In this guide, we use Python alongside Apache Spark and Delta Lake to compute time-travel aggregations, batch feature vectors, and stream real-time events. We will write reproducible ETL jobs that register schema definitions and publish feature snapshots for model training. !",
+    "combined_text":"Building Scalable Feature Stores with Python and Apache Spark Building Scalable Feature Stores with Python and Apache Spark Feature Store Architecture for Machine Learning Managing feature parity between offline training and online inference is a classic challenge in machine learning pipelines. In this guide, we use Python alongside Apache Spark and Delta Lake to compute time-travel aggregations, batch feature vectors, and stream real-time events. We will write reproducible ETL jobs that register schema definitions and publish feature snapshots for model training. !",
+    "word_count":64,
+    "tags":[
+      "Machine Learning",
+      "Python",
+      "Data Engineering"
+    ],
+    "published_date":"2025-02-01T14:30:00.000",
+    "author":"author_8",
+    "fingerprint":"9851c20d9e9ce84aaba0d58ab685de7f"
+  },
+  {
+    "id":"post-1003",
+    "title":"Quantization and Low-Rank Adaptation (LoRA) for LLM Inference Speed",
+    "body":"## Optimizing Transformer Inference Latency\n            Deploying large language models (LLMs) requires minimizing memory footprint and latency. We explore 4-bit and 8-bit post-training quantization (AWQ and bitsandbytes) for transformer decoders.\n            Using PyTorch and Hugging Face, we show how low-rank adaptation reduces parameter count during fine-tuning while KV-cache compression improves tokens-per-second throughput on single GPUs.\n            Benchmarking shows a 3.4x speedup with minimal degradation on text generation benchmarks.",
+    "cleaned_title":"Quantization and Low-Rank Adaptation (LoRA) for LLM Inference Speed",
+    "cleaned_body":"Optimizing Transformer Inference Latency Deploying large language models (LLMs) requires minimizing memory footprint and latency. We explore 4-bit and 8-bit post-training quantization (AWQ and bitsandbytes) for transformer decoders. Using PyTorch and Hugging Face, we show how low-rank adaptation reduces parameter count during fine-tuning while KV-cache compression improves tokens-per-second throughput on single GPUs. Benchmarking shows a 3.4x speedup with minimal degradation on text generation benchmarks.",
+    "combined_text":"Quantization and Low-Rank Adaptation (LoRA) for LLM Inference Speed Quantization and Low-Rank Adaptation (LoRA) for LLM Inference Speed Optimizing Transformer Inference Latency Deploying large language models (LLMs) requires minimizing memory footprint and latency. We explore 4-bit and 8-bit post-training quantization (AWQ and bitsandbytes) for transformer decoders. Using PyTorch and Hugging Face, we show how low-rank adaptation reduces parameter count during fine-tuning while KV-cache compression improves tokens-per-second throughput on single GPUs. Benchmarking shows a 3.4x speedup with minimal degradation on text generation benchmarks.",
+    "word_count":64,
+    "tags":[
+      "Deep Learning",
+      "Natural Language Processing",
+      "Performance Optimization"
+    ],
+    "published_date":"2025-02-20T09:15:00.000",
+    "author":"author_2",
+    "fingerprint":"6ab42348124d99219f8e6b279b1f5fdd"
+  },
+  {
+    "id":"post-1032",
+    "title":"Distributed Training Strategies: Data Parallel vs Pipeline Parallel in PyTorch",
+    "body":"<article>\n        <h1>Distributed Training Strategies: Data Parallel vs Pipeline Parallel in PyTorch<\/h1>\n        <p>Training large neural networks exceeds single GPU VRAM. We analyze DistributedDataParallel (DDP), Fully Sharded Data Parallel (FSDP), and tensor parallelism trade-offs across multi-node GPU clusters.<\/p>\n        <p>In this article we step through practical implementation details, code samples, and real-world deployment challenges.<\/p>\n        <footer><p>Tags: Deep Learning, Performance Optimization<\/p><a href='\/rss'>RSS Feed<\/a><\/footer>\n        <\/article>",
+    "cleaned_title":"Distributed Training Strategies: Data Parallel vs Pipeline Parallel in PyTorch",
+    "cleaned_body":"Distributed Training Strategies: Data Parallel vs Pipeline Parallel in PyTorch Training large neural networks exceeds single GPU VRAM. We analyze DistributedDataParallel (DDP), Fully Sharded Data Parallel (FSDP), and tensor parallelism trade-offs across multi-node GPU clusters. In this article we step through practical implementation details, code samples, and real-world deployment challenges.",
+    "combined_text":"Distributed Training Strategies: Data Parallel vs Pipeline Parallel in PyTorch Distributed Training Strategies: Data Parallel vs Pipeline Parallel in PyTorch Distributed Training Strategies: Data Parallel vs Pipeline Parallel in PyTorch Training large neural networks exceeds single GPU VRAM. We analyze DistributedDataParallel (DDP), Fully Sharded Data Parallel (FSDP), and tensor parallelism trade-offs across multi-node GPU clusters. In this article we step through practical implementation details, code samples, and real-world deployment challenges.",
+    "word_count":50,
+    "tags":[
+      "Deep Learning",
+      "Performance Optimization"
+    ],
+    "published_date":"2025-02-21T00:00:00.000",
+    "author":"author_8",
+    "fingerprint":"4af3721cfd282611898572393f3a1821"
+  },
+  {
+    "id":"post-1004",
+    "title":"Designing Multi-Region Active-Active Architectures on AWS with Kubernetes",
+    "body":"<h3>Multi-Region Distributed Systems<\/h3>\n            High availability at global scale demands multi-region deployment strategies. We examine Route 53 latency-based routing, Amazon EKS multi-cluster orchestration, and Terraform modules for declarative infrastructure.\n            Key trade-offs include cross-region database replication lag, eventual consistency vs ACID guarantees, and automated failover runbooks during regional cloud outages.",
+    "cleaned_title":"Designing Multi-Region Active-Active Architectures on AWS with Kubernetes",
+    "cleaned_body":"Multi-Region Distributed Systems High availability at global scale demands multi-region deployment strategies. We examine Route 53 latency-based routing, Amazon EKS multi-cluster orchestration, and Terraform modules for declarative infrastructure. Key trade-offs include cross-region database replication lag, eventual consistency vs ACID guarantees, and automated failover runbooks during regional cloud outages.",
+    "combined_text":"Designing Multi-Region Active-Active Architectures on AWS with Kubernetes Designing Multi-Region Active-Active Architectures on AWS with Kubernetes Multi-Region Distributed Systems High availability at global scale demands multi-region deployment strategies. We examine Route 53 latency-based routing, Amazon EKS multi-cluster orchestration, and Terraform modules for declarative infrastructure. Key trade-offs include cross-region database replication lag, eventual consistency vs ACID guarantees, and automated failover runbooks during regional cloud outages.",
+    "word_count":48,
+    "tags":[
+      "DevOps & Cloud",
+      "Software Architecture"
+    ],
+    "published_date":"2025-03-05T11:20:00.000",
+    "author":"author_7",
+    "fingerprint":"ce1a448ace53ee47aec50112e3e1a1bf"
+  },
+  {
+    "id":"post-1033",
+    "title":"Contract-Driven Development with OpenAPI and TypeScript Generator",
+    "body":"<article>\n        <h1>Contract-Driven Development with OpenAPI and TypeScript Generator<\/h1>\n        <p>Preventing frontend and backend drift through schema-driven development. We show how backend OpenAPI 3.1 specs automatically generate typed TypeScript API client SDKs with zero manual boilerplate.<\/p>\n        <p>In this article we step through practical implementation details, code samples, and real-world deployment challenges.<\/p>\n        <footer><p>Tags: API Development, Frontend Development<\/p><a href='\/rss'>RSS Feed<\/a><\/footer>\n        <\/article>",
+    "cleaned_title":"Contract-Driven Development with OpenAPI and TypeScript Generator",
+    "cleaned_body":"Contract-Driven Development with OpenAPI and TypeScript Generator Preventing frontend and backend drift through schema-driven development. We show how backend OpenAPI 3.1 specs automatically generate typed TypeScript API client SDKs with zero manual boilerplate. In this article we step through practical implementation details, code samples, and real-world deployment challenges.",
+    "combined_text":"Contract-Driven Development with OpenAPI and TypeScript Generator Contract-Driven Development with OpenAPI and TypeScript Generator Contract-Driven Development with OpenAPI and TypeScript Generator Preventing frontend and backend drift through schema-driven development. We show how backend OpenAPI 3.1 specs automatically generate typed TypeScript API client SDKs with zero manual boilerplate. In this article we step through practical implementation details, code samples, and real-world deployment challenges.",
+    "word_count":48,
+    "tags":[
+      "API Development",
+      "Frontend Development"
+    ],
+    "published_date":"2025-03-23T00:00:00.000",
+    "author":"author_6",
+    "fingerprint":"900003e740d8d35e62ed8fae6dfe71ae"
+  },
+  {
+    "id":"post-1005",
+    "title":"PostgreSQL Query Optimization: Index Scans, Partitioning, and Explain Plans",
+    "body":"Analyzing slow queries in PostgreSQL begins with EXPLAIN (ANALYZE, BUFFERS). We walk through diagnosing sequential scans, index bloat, and vacuuming deficits.\n            We cover B-tree vs BRIN indexes for time-series data, declarative table partitioning, and configuring work_mem and shared_buffers for high-throughput transactional database workloads.",
+    "cleaned_title":"PostgreSQL Query Optimization: Index Scans, Partitioning, and Explain Plans",
+    "cleaned_body":"Analyzing slow queries in PostgreSQL begins with EXPLAIN (ANALYZE, BUFFERS). We walk through diagnosing sequential scans, index bloat, and vacuuming deficits. We cover B-tree vs BRIN indexes for time-series data, declarative table partitioning, and configuring work_mem and shared_buffers for high-throughput transactional database workloads.",
+    "combined_text":"PostgreSQL Query Optimization: Index Scans, Partitioning, and Explain Plans PostgreSQL Query Optimization: Index Scans, Partitioning, and Explain Plans Analyzing slow queries in PostgreSQL begins with EXPLAIN (ANALYZE, BUFFERS). We walk through diagnosing sequential scans, index bloat, and vacuuming deficits. We cover B-tree vs BRIN indexes for time-series data, declarative table partitioning, and configuring work_mem and shared_buffers for high-throughput transactional database workloads.",
+    "word_count":43,
+    "tags":[
+      "Database Systems",
+      "Performance Optimization"
+    ],
+    "published_date":"2025-03-25T16:00:00.000",
+    "author":"author_6",
+    "fingerprint":"1be7d8435c3bcaa2ee0a7ae10c2e0975"
+  },
+  {
+    "id":"post-1006",
+    "title":"Mastering React Server Components and Core Web Vitals",
+    "body":"<div class='nav-bar'><a href='\/web'>Web<\/a><\/div>\n            React Server Components (RSC) fundamentally shift how frontend web applications render UI. By rendering data-heavy components on the server, client JavaScript bundle size drops drastically.\n            We measure Largest Contentful Paint (LCP) and Cumulative Layout Shift (CLS) before and after streaming SSR with Suspense boundaries.\n            Code splitting and CSS-in-JS trade-offs are evaluated for enterprise frontend codebases.",
+    "cleaned_title":"Mastering React Server Components and Core Web Vitals",
+    "cleaned_body":"Web React Server Components (RSC) fundamentally shift how frontend web applications render UI. By rendering data-heavy components on the server, client JavaScript bundle size drops drastically. We measure Largest Contentful Paint (LCP) and Cumulative Layout Shift (CLS) before and after streaming SSR with Suspense boundaries. Code splitting and CSS-in-JS trade-offs are evaluated for enterprise frontend codebases.",
+    "combined_text":"Mastering React Server Components and Core Web Vitals Mastering React Server Components and Core Web Vitals Web React Server Components (RSC) fundamentally shift how frontend web applications render UI. By rendering data-heavy components on the server, client JavaScript bundle size drops drastically. We measure Largest Contentful Paint (LCP) and Cumulative Layout Shift (CLS) before and after streaming SSR with Suspense boundaries. Code splitting and CSS-in-JS trade-offs are evaluated for enterprise frontend codebases.",
+    "word_count":56,
+    "tags":[
+      "Frontend Development",
+      "Performance Optimization"
+    ],
+    "published_date":"2025-04-10T12:00:00.000",
+    "author":"author_5",
+    "fingerprint":"d61fcb347873bbdf896df44d050416c8"
+  },
+  {
+    "id":"post-1034",
+    "title":"Securing CI\/CD Pipelines: Ephemeral Runners and OIDC Federation",
+    "body":"<article>\n        <h1>Securing CI\/CD Pipelines: Ephemeral Runners and OIDC Federation<\/h1>\n        <p>Traditional hardcoded cloud credentials in CI\/CD secrets present major security hazards. We implement OpenID Connect (OIDC) federation between GitHub Actions and AWS IAM for credential-less pipeline deployments.<\/p>\n        <p>In this article we step through practical implementation details, code samples, and real-world deployment challenges.<\/p>\n        <footer><p>Tags: DevOps & Cloud, Application Security<\/p><a href='\/rss'>RSS Feed<\/a><\/footer>\n        <\/article>",
+    "cleaned_title":"Securing CI\/CD Pipelines: Ephemeral Runners and OIDC Federation",
+    "cleaned_body":"Securing CI\/CD Pipelines: Ephemeral Runners and OIDC Federation Traditional hardcoded cloud credentials in CI\/CD secrets present major security hazards. We implement OpenID Connect (OIDC) federation between GitHub Actions and AWS IAM for credential-less pipeline deployments. In this article we step through practical implementation details, code samples, and real-world deployment challenges.",
+    "combined_text":"Securing CI\/CD Pipelines: Ephemeral Runners and OIDC Federation Securing CI\/CD Pipelines: Ephemeral Runners and OIDC Federation Securing CI\/CD Pipelines: Ephemeral Runners and OIDC Federation Traditional hardcoded cloud credentials in CI\/CD secrets present major security hazards. We implement OpenID Connect (OIDC) federation between GitHub Actions and AWS IAM for credential-less pipeline deployments. In this article we step through practical implementation details, code samples, and real-world deployment challenges.",
+    "word_count":50,
+    "tags":[
+      "DevOps & Cloud",
+      "Application Security"
+    ],
+    "published_date":"2025-04-22T00:00:00.000",
+    "author":"author_8",
+    "fingerprint":"18de367ab99d639241026552191b62f8"
+  },
+  {
+    "id":"post-1007",
+    "title":"Practical Transfer Learning with PyTorch: Fine-Tuning Vision Transformers",
+    "body":"Transfer learning allows practitioners to leverage pretrained foundation models for niche image classification tasks.\n            We implement an end-to-end PyTorch script in Python, freezing base layers, replacing the classification head, and scheduling learning rate decay with AdamW.\n            We explore data augmentation with Albumentations, mixup regularization, and validation loss tracking.",
+    "cleaned_title":"Practical Transfer Learning with PyTorch: Fine-Tuning Vision Transformers",
+    "cleaned_body":"Transfer learning allows practitioners to leverage pretrained foundation models for niche image classification tasks. We implement an end-to-end PyTorch script in Python, freezing base layers, replacing the classification head, and scheduling learning rate decay with AdamW. We explore data augmentation with Albumentations, mixup regularization, and validation loss tracking.",
+    "combined_text":"Practical Transfer Learning with PyTorch: Fine-Tuning Vision Transformers Practical Transfer Learning with PyTorch: Fine-Tuning Vision Transformers Transfer learning allows practitioners to leverage pretrained foundation models for niche image classification tasks. We implement an end-to-end PyTorch script in Python, freezing base layers, replacing the classification head, and scheduling learning rate decay with AdamW. We explore data augmentation with Albumentations, mixup regularization, and validation loss tracking.",
+    "word_count":48,
+    "tags":[
+      "Machine Learning",
+      "Deep Learning",
+      "Python"
+    ],
+    "published_date":"2025-05-02T15:45:00.000",
+    "author":"author_2",
+    "fingerprint":"49a6a0321b38590d2b473a35d39fafc1"
+  },
+  {
+    "id":"post-1008",
+    "title":"Event-Driven Microservices with gRPC and Distributed PostgreSQL Databases",
+    "body":"When decomposing a monolith into microservices, synchronous REST calls can introduce cascading failures.\n            We explore gRPC protocols with Protocol Buffers for internal service communication, alongside the Outbox pattern for transactional consistency across isolated PostgreSQL instances.\n            Idempotent consumer handlers prevent duplicate message execution.",
+    "cleaned_title":"Event-Driven Microservices with gRPC and Distributed PostgreSQL Databases",
+    "cleaned_body":"When decomposing a monolith into microservices, synchronous REST calls can introduce cascading failures. We explore gRPC protocols with Protocol Buffers for internal service communication, alongside the Outbox pattern for transactional consistency across isolated PostgreSQL instances. Idempotent consumer handlers prevent duplicate message execution.",
+    "combined_text":"Event-Driven Microservices with gRPC and Distributed PostgreSQL Databases Event-Driven Microservices with gRPC and Distributed PostgreSQL Databases When decomposing a monolith into microservices, synchronous REST calls can introduce cascading failures. We explore gRPC protocols with Protocol Buffers for internal service communication, alongside the Outbox pattern for transactional consistency across isolated PostgreSQL instances. Idempotent consumer handlers prevent duplicate message execution.",
+    "word_count":42,
+    "tags":[
+      "API Development",
+      "Database Systems",
+      "Software Architecture"
+    ],
+    "published_date":"2025-05-20T10:10:00.000",
+    "author":"author_5",
+    "fingerprint":"3c776aae3d5a847bac0da18c4c8c86cf"
+  },
+  {
+    "id":"post-1035",
+    "title":"Database Sharding and Distributed Transactions with CockroachDB",
+    "body":"<article>\n        <h1>Database Sharding and Distributed Transactions with CockroachDB<\/h1>\n        <p>Scaling relational databases horizontally requires understanding distributed consensus and Raft consensus engines. We examine CockroachDB architecture, multi-raft ranges, and cross-node transactional isolation.<\/p>\n        <p>In this article we step through practical implementation details, code samples, and real-world deployment challenges.<\/p>\n        <footer><p>Tags: Database Systems, Software Architecture<\/p><a href='\/rss'>RSS Feed<\/a><\/footer>\n        <\/article>",
+    "cleaned_title":"Database Sharding and Distributed Transactions with CockroachDB",
+    "cleaned_body":"Database Sharding and Distributed Transactions with CockroachDB Scaling relational databases horizontally requires understanding distributed consensus and Raft consensus engines. We examine CockroachDB architecture, multi-raft ranges, and cross-node transactional isolation. In this article we step through practical implementation details, code samples, and real-world deployment challenges.",
+    "combined_text":"Database Sharding and Distributed Transactions with CockroachDB Database Sharding and Distributed Transactions with CockroachDB Database Sharding and Distributed Transactions with CockroachDB Scaling relational databases horizontally requires understanding distributed consensus and Raft consensus engines. We examine CockroachDB architecture, multi-raft ranges, and cross-node transactional isolation. In this article we step through practical implementation details, code samples, and real-world deployment challenges.",
+    "word_count":44,
+    "tags":[
+      "Database Systems",
+      "Software Architecture"
+    ],
+    "published_date":"2025-05-22T00:00:00.000",
+    "author":"author_4",
+    "fingerprint":"e63b3e02e1a27058983d1372b32cc7f3"
+  },
+  {
+    "id":"post-1009",
+    "title":"Named Entity Recognition and Information Extraction with Spacy and Scikit-Learn",
+    "body":"Extracting structured entities from unstructured text is a cornerstone of NLP.\n            We demonstrate building a custom NER pipeline in Python using SpaCy tokenizers combined with a CRF (Conditional Random Field) and TF-IDF logistic regression classifier.\n            Evaluation metrics include entity-level precision, recall, and token classification confusion matrices.",
+    "cleaned_title":"Named Entity Recognition and Information Extraction with Spacy and Scikit-Learn",
+    "cleaned_body":"Extracting structured entities from unstructured text is a cornerstone of NLP. We demonstrate building a custom NER pipeline in Python using SpaCy tokenizers combined with a CRF (Conditional Random Field) and TF-IDF logistic regression classifier. Evaluation metrics include entity-level precision, recall, and token classification confusion matrices.",
+    "combined_text":"Named Entity Recognition and Information Extraction with Spacy and Scikit-Learn Named Entity Recognition and Information Extraction with Spacy and Scikit-Learn Extracting structured entities from unstructured text is a cornerstone of NLP. We demonstrate building a custom NER pipeline in Python using SpaCy tokenizers combined with a CRF (Conditional Random Field) and TF-IDF logistic regression classifier. Evaluation metrics include entity-level precision, recall, and token classification confusion matrices.",
+    "word_count":46,
+    "tags":[
+      "Natural Language Processing",
+      "Machine Learning",
+      "Python"
+    ],
+    "published_date":"2025-06-12T08:30:00.000",
+    "author":"author_5",
+    "fingerprint":"367099545ad5dbc44597c9ab7b3979a6"
+  },
+  {
+    "id":"post-1036",
+    "title":"Tokenization Strategies: BPE, WordPiece, and SentencePiece in Python",
+    "body":"<article>\n        <h1>Tokenization Strategies: BPE, WordPiece, and SentencePiece in Python<\/h1>\n        <p>Understanding subword tokenization is essential for modern NLP. We build Byte-Pair Encoding and WordPiece tokenizers from scratch in Python, analyzing vocabulary size trade-offs and out-of-vocabulary handling.<\/p>\n        <p>In this article we step through practical implementation details, code samples, and real-world deployment challenges.<\/p>\n        <footer><p>Tags: Natural Language Processing, Python<\/p><a href='\/rss'>RSS Feed<\/a><\/footer>\n        <\/article>",
+    "cleaned_title":"Tokenization Strategies: BPE, WordPiece, and SentencePiece in Python",
+    "cleaned_body":"Tokenization Strategies: BPE, WordPiece, and SentencePiece in Python Understanding subword tokenization is essential for modern NLP. We build Byte-Pair Encoding and WordPiece tokenizers from scratch in Python, analyzing vocabulary size trade-offs and out-of-vocabulary handling. In this article we step through practical implementation details, code samples, and real-world deployment challenges.",
+    "combined_text":"Tokenization Strategies: BPE, WordPiece, and SentencePiece in Python Tokenization Strategies: BPE, WordPiece, and SentencePiece in Python Tokenization Strategies: BPE, WordPiece, and SentencePiece in Python Understanding subword tokenization is essential for modern NLP. We build Byte-Pair Encoding and WordPiece tokenizers from scratch in Python, analyzing vocabulary size trade-offs and out-of-vocabulary handling. In this article we step through practical implementation details, code samples, and real-world deployment challenges.",
+    "word_count":49,
+    "tags":[
+      "Natural Language Processing",
+      "Python"
+    ],
+    "published_date":"2025-06-21T00:00:00.000",
+    "author":"author_8",
+    "fingerprint":"8e9a0da15ccccf4ca9830b2ef547001d"
+  },
+  {
+    "id":"post-1010",
+    "title":"Container Security and Supply Chain Defense: Trivy, Cosign, and Kubernetes RBAC",
+    "body":"Securing Kubernetes environments starts in the CI\/CD pipeline.\n            We configure automated vulnerability scanning with Trivy to inspect container base images for CVEs, sign OCI artifacts with Cosign, and enforce immutable pod security standards.\n            We restrict service account privileges via strict Kubernetes Role-Based Access Control (RBAC) policies.",
+    "cleaned_title":"Container Security and Supply Chain Defense: Trivy, Cosign, and Kubernetes RBAC",
+    "cleaned_body":"Securing Kubernetes environments starts in the CI\/CD pipeline. We configure automated vulnerability scanning with Trivy to inspect container base images for CVEs, sign OCI artifacts with Cosign, and enforce immutable pod security standards. We restrict service account privileges via strict Kubernetes Role-Based Access Control (RBAC) policies.",
+    "combined_text":"Container Security and Supply Chain Defense: Trivy, Cosign, and Kubernetes RBAC Container Security and Supply Chain Defense: Trivy, Cosign, and Kubernetes RBAC Securing Kubernetes environments starts in the CI\/CD pipeline. We configure automated vulnerability scanning with Trivy to inspect container base images for CVEs, sign OCI artifacts with Cosign, and enforce immutable pod security standards. We restrict service account privileges via strict Kubernetes Role-Based Access Control (RBAC) policies.",
+    "word_count":46,
+    "tags":[
+      "Application Security",
+      "DevOps & Cloud"
+    ],
+    "published_date":"2025-07-01T13:40:00.000",
+    "author":"author_3",
+    "fingerprint":"fa1b40e3c91aa53db4f67c5f6d8e0fdd"
+  },
+  {
+    "id":"post-1037",
+    "title":"Optimizing Apache Spark Shuffle Performance and Memory Management",
+    "body":"<article>\n        <h1>Optimizing Apache Spark Shuffle Performance and Memory Management<\/h1>\n        <p>Spark shuffle stages frequently cause out-of-memory errors and disk spills. We tune spark.sql.shuffle.partitions, explore adaptive query execution (AQE), and benchmark broadcast hash joins against sorted merge joins.<\/p>\n        <p>In this article we step through practical implementation details, code samples, and real-world deployment challenges.<\/p>\n        <footer><p>Tags: Data Engineering, Performance Optimization<\/p><a href='\/rss'>RSS Feed<\/a><\/footer>\n        <\/article>",
+    "cleaned_title":"Optimizing Apache Spark Shuffle Performance and Memory Management",
+    "cleaned_body":"Optimizing Apache Spark Shuffle Performance and Memory Management Spark shuffle stages frequently cause out-of-memory errors and disk spills. We tune spark.sql.shuffle.partitions, explore adaptive query execution (AQE), and benchmark broadcast hash joins against sorted merge joins. In this article we step through practical implementation details, code samples, and real-world deployment challenges.",
+    "combined_text":"Optimizing Apache Spark Shuffle Performance and Memory Management Optimizing Apache Spark Shuffle Performance and Memory Management Optimizing Apache Spark Shuffle Performance and Memory Management Spark shuffle stages frequently cause out-of-memory errors and disk spills. We tune spark.sql.shuffle.partitions, explore adaptive query execution (AQE), and benchmark broadcast hash joins against sorted merge joins. In this article we step through practical implementation details, code samples, and real-world deployment challenges.",
+    "word_count":50,
+    "tags":[
+      "Data Engineering",
+      "Performance Optimization"
+    ],
+    "published_date":"2025-07-21T00:00:00.000",
+    "author":"author_8",
+    "fingerprint":"cfd9d286788fb05a268d68895c6f7a35"
+  },
+  {
+    "id":"post-1011",
+    "title":"Real-Time Streaming Pipelines with Kafka, Flink, and ClickHouse",
+    "body":"High-throughput telemetry requires streaming analytics architectures.\n            We deploy Apache Kafka on Kubernetes to ingest millions of events per second, process stateful stream windows with Apache Flink, and sink aggregated metrics into ClickHouse for sub-second analytical queries.\n            We monitor consumer lag and backpressure using Prometheus.",
+    "cleaned_title":"Real-Time Streaming Pipelines with Kafka, Flink, and ClickHouse",
+    "cleaned_body":"High-throughput telemetry requires streaming analytics architectures. We deploy Apache Kafka on Kubernetes to ingest millions of events per second, process stateful stream windows with Apache Flink, and sink aggregated metrics into ClickHouse for sub-second analytical queries. We monitor consumer lag and backpressure using Prometheus.",
+    "combined_text":"Real-Time Streaming Pipelines with Kafka, Flink, and ClickHouse Real-Time Streaming Pipelines with Kafka, Flink, and ClickHouse High-throughput telemetry requires streaming analytics architectures. We deploy Apache Kafka on Kubernetes to ingest millions of events per second, process stateful stream windows with Apache Flink, and sink aggregated metrics into ClickHouse for sub-second analytical queries. We monitor consumer lag and backpressure using Prometheus.",
+    "word_count":44,
+    "tags":[
+      "Data Engineering",
+      "DevOps & Cloud",
+      "Database Systems"
+    ],
+    "published_date":"2025-07-22T17:15:00.000",
+    "author":"author_7",
+    "fingerprint":"88697a03267c037bd9746c03fb10b329"
+  },
+  {
+    "id":"post-1012",
+    "title":"Building Offline-First Web Apps with TypeScript, Service Workers, and GraphQL",
+    "body":"Modern web applications need to handle intermittent network connectivity gracefully.\n            We utilize Apollo Client with cache persistence, background sync via Service Workers, and IndexedDB for local data storage in TypeScript.\n            Optimistic UI updates ensure instantaneous user feedback while syncing mutations with the GraphQL API in the background.",
+    "cleaned_title":"Building Offline-First Web Apps with TypeScript, Service Workers, and GraphQL",
+    "cleaned_body":"Modern web applications need to handle intermittent network connectivity gracefully. We utilize Apollo Client with cache persistence, background sync via Service Workers, and IndexedDB for local data storage in TypeScript. Optimistic UI updates ensure instantaneous user feedback while syncing mutations with the GraphQL API in the background.",
+    "combined_text":"Building Offline-First Web Apps with TypeScript, Service Workers, and GraphQL Building Offline-First Web Apps with TypeScript, Service Workers, and GraphQL Modern web applications need to handle intermittent network connectivity gracefully. We utilize Apollo Client with cache persistence, background sync via Service Workers, and IndexedDB for local data storage in TypeScript. Optimistic UI updates ensure instantaneous user feedback while syncing mutations with the GraphQL API in the background.",
+    "word_count":47,
+    "tags":[
+      "Frontend Development",
+      "API Development"
+    ],
+    "published_date":"2025-08-14T11:00:00.000",
+    "author":"author_3",
+    "fingerprint":"339ebbb48854b512dc7aa143caf09dba"
+  },
+  {
+    "id":"post-1038",
+    "title":"Event Sourcing and CQRS with Kafka and EventStore",
+    "body":"<article>\n        <h1>Event Sourcing and CQRS with Kafka and EventStore<\/h1>\n        <p>Separating read and write models with Command Query Responsibility Segregation (CQRS). We trace event immutability, projection building, and eventual consistency challenges in high-volume transaction systems.<\/p>\n        <p>In this article we step through practical implementation details, code samples, and real-world deployment challenges.<\/p>\n        <footer><p>Tags: Software Architecture, API Development<\/p><a href='\/rss'>RSS Feed<\/a><\/footer>\n        <\/article>",
+    "cleaned_title":"Event Sourcing and CQRS with Kafka and EventStore",
+    "cleaned_body":"Event Sourcing and CQRS with Kafka and EventStore Separating read and write models with Command Query Responsibility Segregation (CQRS). We trace event immutability, projection building, and eventual consistency challenges in high-volume transaction systems. In this article we step through practical implementation details, code samples, and real-world deployment challenges.",
+    "combined_text":"Event Sourcing and CQRS with Kafka and EventStore Event Sourcing and CQRS with Kafka and EventStore Event Sourcing and CQRS with Kafka and EventStore Separating read and write models with Command Query Responsibility Segregation (CQRS). We trace event immutability, projection building, and eventual consistency challenges in high-volume transaction systems. In this article we step through practical implementation details, code samples, and real-world deployment challenges.",
+    "word_count":48,
+    "tags":[
+      "Software Architecture",
+      "API Development"
+    ],
+    "published_date":"2025-08-20T00:00:00.000",
+    "author":"author_7",
+    "fingerprint":"d63ae96f291c62ea9797c9b44f2aa3d9"
+  },
+  {
+    "id":"post-1013",
+    "title":"Accelerating Scikit-Learn Pipelines with Intel Extension and ONNX Runtime",
+    "body":"Training and serving classical machine learning models at low latency can be achieved without heavy neural networks.\n            We profile scikit-learn random forests and gradient boosted trees in Python, convert trained estimators into ONNX graphs, and run inference with ONNX Runtime.\n            Benchmark results demonstrate a 5x reduction in P99 inference latency.",
+    "cleaned_title":"Accelerating Scikit-Learn Pipelines with Intel Extension and ONNX Runtime",
+    "cleaned_body":"Training and serving classical machine learning models at low latency can be achieved without heavy neural networks. We profile scikit-learn random forests and gradient boosted trees in Python, convert trained estimators into ONNX graphs, and run inference with ONNX Runtime. Benchmark results demonstrate a 5x reduction in P99 inference latency.",
+    "combined_text":"Accelerating Scikit-Learn Pipelines with Intel Extension and ONNX Runtime Accelerating Scikit-Learn Pipelines with Intel Extension and ONNX Runtime Training and serving classical machine learning models at low latency can be achieved without heavy neural networks. We profile scikit-learn random forests and gradient boosted trees in Python, convert trained estimators into ONNX graphs, and run inference with ONNX Runtime. Benchmark results demonstrate a 5x reduction in P99 inference latency.",
+    "word_count":50,
+    "tags":[
+      "Machine Learning",
+      "Performance Optimization",
+      "Python"
+    ],
+    "published_date":"2025-09-05T09:20:00.000",
+    "author":"author_8",
+    "fingerprint":"d99ac58863c6f6e70a741c5df4ccd29a"
+  },
+  {
+    "id":"post-1039",
+    "title":"Optimizing Web Fonts and Image Assets for Sub-Second First Contentful Paint",
+    "body":"<article>\n        <h1>Optimizing Web Fonts and Image Assets for Sub-Second First Contentful Paint<\/h1>\n        <p>Modern websites suffer performance degradation from unoptimized media. We examine responsive picture elements, AVIF\/WebP image formats, font-display swap, and subsetting custom web fonts.<\/p>\n        <p>In this article we step through practical implementation details, code samples, and real-world deployment challenges.<\/p>\n        <footer><p>Tags: Frontend Development, Performance Optimization<\/p><a href='\/rss'>RSS Feed<\/a><\/footer>\n        <\/article>",
+    "cleaned_title":"Optimizing Web Fonts and Image Assets for Sub-Second First Contentful Paint",
+    "cleaned_body":"Optimizing Web Fonts and Image Assets for Sub-Second First Contentful Paint Modern websites suffer performance degradation from unoptimized media. We examine responsive picture elements, AVIF\/WebP image formats, font-display swap, and subsetting custom web fonts. In this article we step through practical implementation details, code samples, and real-world deployment challenges.",
+    "combined_text":"Optimizing Web Fonts and Image Assets for Sub-Second First Contentful Paint Optimizing Web Fonts and Image Assets for Sub-Second First Contentful Paint Optimizing Web Fonts and Image Assets for Sub-Second First Contentful Paint Modern websites suffer performance degradation from unoptimized media. We examine responsive picture elements, AVIF\/WebP image formats, font-display swap, and subsetting custom web fonts. In this article we step through practical implementation details, code samples, and real-world deployment challenges.",
+    "word_count":49,
+    "tags":[
+      "Frontend Development",
+      "Performance Optimization"
+    ],
+    "published_date":"2025-09-19T00:00:00.000",
+    "author":"author_7",
+    "fingerprint":"fb18465d9842d1fcfb703b8d6b277db4"
+  },
+  {
+    "id":"post-1014",
+    "title":"Zero Trust Architecture: Identity-Aware Proxies and Microsegmentation",
+    "body":"Perimeter-based network security is no longer sufficient.\n            Zero Trust Architecture assumes breach and verifies every request explicitly.\n            We examine mutual TLS (mTLS) with SPIFFE\/SPIRE, continuous contextual authorization, identity-aware proxies, and microsegmentation policies across distributed systems.",
+    "cleaned_title":"Zero Trust Architecture: Identity-Aware Proxies and Microsegmentation",
+    "cleaned_body":"Perimeter-based network security is no longer sufficient. Zero Trust Architecture assumes breach and verifies every request explicitly. We examine mutual TLS (mTLS) with SPIFFE\/SPIRE, continuous contextual authorization, identity-aware proxies, and microsegmentation policies across distributed systems.",
+    "combined_text":"Zero Trust Architecture: Identity-Aware Proxies and Microsegmentation Zero Trust Architecture: Identity-Aware Proxies and Microsegmentation Perimeter-based network security is no longer sufficient. Zero Trust Architecture assumes breach and verifies every request explicitly. We examine mutual TLS (mTLS) with SPIFFE\/SPIRE, continuous contextual authorization, identity-aware proxies, and microsegmentation policies across distributed systems.",
+    "word_count":35,
+    "tags":[
+      "Software Architecture",
+      "Application Security"
+    ],
+    "published_date":"2025-09-28T14:10:00.000",
+    "author":"author_4",
+    "fingerprint":"397975f6d7453c182946f4164cf6c862"
+  },
+  {
+    "id":"post-1015",
+    "title":"Retrieval-Augmented Generation (RAG) Architecture: Embeddings, Vector Stores, and Re-ranking",
+    "body":"RAG pipelines overcome hallucination in generative AI by grounding LLM responses in proprietary enterprise knowledge.\n            We review dense vector embeddings, HNSW index construction in vector databases, hybrid BM25 lexical retrieval, and cross-encoder re-ranking for contextual precision.\n            Evaluation is conducted using Faithfulness and Answer Relevance metrics.",
+    "cleaned_title":"Retrieval-Augmented Generation (RAG) Architecture: Embeddings, Vector Stores, and Re-ranking",
+    "cleaned_body":"RAG pipelines overcome hallucination in generative AI by grounding LLM responses in proprietary enterprise knowledge. We review dense vector embeddings, HNSW index construction in vector databases, hybrid BM25 lexical retrieval, and cross-encoder re-ranking for contextual precision. Evaluation is conducted using Faithfulness and Answer Relevance metrics.",
+    "combined_text":"Retrieval-Augmented Generation (RAG) Architecture: Embeddings, Vector Stores, and Re-ranking Retrieval-Augmented Generation (RAG) Architecture: Embeddings, Vector Stores, and Re-ranking RAG pipelines overcome hallucination in generative AI by grounding LLM responses in proprietary enterprise knowledge. We review dense vector embeddings, HNSW index construction in vector databases, hybrid BM25 lexical retrieval, and cross-encoder re-ranking for contextual precision. Evaluation is conducted using Faithfulness and Answer Relevance metrics.",
+    "word_count":45,
+    "tags":[
+      "Deep Learning",
+      "Natural Language Processing"
+    ],
+    "published_date":"2025-10-18T16:40:00.000",
+    "author":"author_5",
+    "fingerprint":"75535ea25103a8361f3339991dc40953"
+  },
+  {
+    "id":"post-1040",
+    "title":"Adversarial Machine Learning: Defending Against Data Poisoning and Model Inversion",
+    "body":"<article>\n        <h1>Adversarial Machine Learning: Defending Against Data Poisoning and Model Inversion<\/h1>\n        <p>Machine learning models in production are susceptible to adversarial evasion attacks and data poisoning. We explore defense mechanisms including input sanitization, differential privacy, and robust adversarial training.<\/p>\n        <p>In this article we step through practical implementation details, code samples, and real-world deployment challenges.<\/p>\n        <footer><p>Tags: Machine Learning, Application Security<\/p><a href='\/rss'>RSS Feed<\/a><\/footer>\n        <\/article>",
+    "cleaned_title":"Adversarial Machine Learning: Defending Against Data Poisoning and Model Inversion",
+    "cleaned_body":"Adversarial Machine Learning: Defending Against Data Poisoning and Model Inversion Machine learning models in production are susceptible to adversarial evasion attacks and data poisoning. We explore defense mechanisms including input sanitization, differential privacy, and robust adversarial training. In this article we step through practical implementation details, code samples, and real-world deployment challenges.",
+    "combined_text":"Adversarial Machine Learning: Defending Against Data Poisoning and Model Inversion Adversarial Machine Learning: Defending Against Data Poisoning and Model Inversion Adversarial Machine Learning: Defending Against Data Poisoning and Model Inversion Machine learning models in production are susceptible to adversarial evasion attacks and data poisoning. We explore defense mechanisms including input sanitization, differential privacy, and robust adversarial training. In this article we step through practical implementation details, code samples, and real-world deployment challenges.",
+    "word_count":52,
+    "tags":[
+      "Machine Learning",
+      "Application Security"
+    ],
+    "published_date":"2025-10-19T00:00:00.000",
+    "author":"author_2",
+    "fingerprint":"25348cce47ac72110027692ca8e977c6"
+  },
+  {
+    "id":"post-1016",
+    "title":"Automating Multi-Cloud Infrastructure with Pulumi and Python",
+    "body":"Infrastructure as Code (IaC) moves beyond static domain-specific languages.\n            Using Python and Pulumi, software engineers can write object-oriented infrastructure configurations, utilize standard unit testing frameworks (pytest), and provision cloud resources across AWS and Google Cloud Platform.\n            We build reusable custom components and manage secrets securely.",
+    "cleaned_title":"Automating Multi-Cloud Infrastructure with Pulumi and Python",
+    "cleaned_body":"Infrastructure as Code (IaC) moves beyond static domain-specific languages. Using Python and Pulumi, software engineers can write object-oriented infrastructure configurations, utilize standard unit testing frameworks (pytest), and provision cloud resources across AWS and Google Cloud Platform. We build reusable custom components and manage secrets securely.",
+    "combined_text":"Automating Multi-Cloud Infrastructure with Pulumi and Python Automating Multi-Cloud Infrastructure with Pulumi and Python Infrastructure as Code (IaC) moves beyond static domain-specific languages. Using Python and Pulumi, software engineers can write object-oriented infrastructure configurations, utilize standard unit testing frameworks (pytest), and provision cloud resources across AWS and Google Cloud Platform. We build reusable custom components and manage secrets securely.",
+    "word_count":45,
+    "tags":[
+      "DevOps & Cloud",
+      "Python"
+    ],
+    "published_date":"2025-11-10T10:05:00.000",
+    "author":"author_2",
+    "fingerprint":"6ebdbd177b2aa7f643f97f29a4def5b4"
+  },
+  {
+    "id":"post-1017",
+    "title":"Content Security Policy (CSP) and Cross-Site Scripting (XSS) Prevention in Modern SPAs",
+    "body":"Frontend single-page applications are vulnerable to DOM-based XSS and malicious third-party script injection.\n            We dissect strict Content Security Policy (CSP) headers, nonce generation, Trusted Types API, and sanitizing user inputs in React and Angular applications.\n            Audit workflows with Chrome DevTools are demonstrated.",
+    "cleaned_title":"Content Security Policy (CSP) and Cross-Site Scripting (XSS) Prevention in Modern SPAs",
+    "cleaned_body":"Frontend single-page applications are vulnerable to DOM-based XSS and malicious third-party script injection. We dissect strict Content Security Policy (CSP) headers, nonce generation, Trusted Types API, and sanitizing user inputs in React and Angular applications. Audit workflows with Chrome DevTools are demonstrated.",
+    "combined_text":"Content Security Policy (CSP) and Cross-Site Scripting (XSS) Prevention in Modern SPAs Content Security Policy (CSP) and Cross-Site Scripting (XSS) Prevention in Modern SPAs Frontend single-page applications are vulnerable to DOM-based XSS and malicious third-party script injection. We dissect strict Content Security Policy (CSP) headers, nonce generation, Trusted Types API, and sanitizing user inputs in React and Angular applications. Audit workflows with Chrome DevTools are demonstrated.",
+    "word_count":42,
+    "tags":[
+      "Frontend Development",
+      "Application Security"
+    ],
+    "published_date":"2025-12-02T13:25:00.000",
+    "author":"author_1",
+    "fingerprint":"2129b729d2560aad6b8b97d3c6475258"
+  },
+  {
+    "id":"post-1018",
+    "title":"Modernizing Data Warehouses: Transitioning from Traditional OLAP to Iceberg and DuckDB",
+    "body":"Apache Iceberg table formats offer ACID transactions, partition evolution, and schema enforcement over object storage.\n            We showcase pairing DuckDB with Iceberg catalogs in Python to run analytical SQL queries directly on parquet files without standing up costly database clusters.\n            Query execution speeds and storage cost reductions are evaluated.",
+    "cleaned_title":"Modernizing Data Warehouses: Transitioning from Traditional OLAP to Iceberg and DuckDB",
+    "cleaned_body":"Apache Iceberg table formats offer ACID transactions, partition evolution, and schema enforcement over object storage. We showcase pairing DuckDB with Iceberg catalogs in Python to run analytical SQL queries directly on parquet files without standing up costly database clusters. Query execution speeds and storage cost reductions are evaluated.",
+    "combined_text":"Modernizing Data Warehouses: Transitioning from Traditional OLAP to Iceberg and DuckDB Modernizing Data Warehouses: Transitioning from Traditional OLAP to Iceberg and DuckDB Apache Iceberg table formats offer ACID transactions, partition evolution, and schema enforcement over object storage. We showcase pairing DuckDB with Iceberg catalogs in Python to run analytical SQL queries directly on parquet files without standing up costly database clusters. Query execution speeds and storage cost reductions are evaluated.",
+    "word_count":48,
+    "tags":[
+      "Database Systems",
+      "Data Engineering"
+    ],
+    "published_date":"2025-12-20T15:30:00.000",
+    "author":"author_8",
+    "fingerprint":"96bf2785205e31482c2a57584e3c2b76"
+  },
+  {
+    "id":"post-1022",
+    "title":"Hardening FastAPI Services: JWT Authentication and Rate Limiting (Updated 2026)",
+    "body":"<nav><a href='\/'>Home<\/a><\/nav>\n            # Hardening FastAPI Services: JWT Authentication and Rate Limiting (Updated 2026)\n            In modern API development, securing backend endpoints is paramount. Using FastAPI with Python, we can implement robust OAuth2 bearer token authentication with JSON Web Tokens (JWT).\n            We demonstrate password hashing using passlib and Bcrypt, token expiration validation, and middleware for sliding window rate limiting.\n            Protecting against credential stuffing and brute-force attacks requires careful HTTP status code handling and CORS configuration.\n            <footer>Republished with updated 2026 dependencies.<\/footer>",
+    "cleaned_title":"Hardening FastAPI Services: JWT Authentication and Rate Limiting (Updated 2026)",
+    "cleaned_body":"# Hardening FastAPI Services: JWT Authentication and Rate Limiting (Updated 2026) In modern API development, securing backend endpoints is paramount. Using FastAPI with Python, we can implement robust OAuth2 bearer token authentication with JSON Web Tokens (JWT). We demonstrate password hashing using passlib and Bcrypt, token expiration validation, and middleware for sliding window rate limiting. Protecting against credential stuffing and brute-force attacks requires careful HTTP status code handling and CORS configuration.",
+    "combined_text":"Hardening FastAPI Services: JWT Authentication and Rate Limiting (Updated 2026) Hardening FastAPI Services: JWT Authentication and Rate Limiting (Updated 2026) # Hardening FastAPI Services: JWT Authentication and Rate Limiting (Updated 2026) In modern API development, securing backend endpoints is paramount. Using FastAPI with Python, we can implement robust OAuth2 bearer token authentication with JSON Web Tokens (JWT). We demonstrate password hashing using passlib and Bcrypt, token expiration validation, and middleware for sliding window rate limiting. Protecting against credential stuffing and brute-force attacks requires careful HTTP status code handling and CORS configuration.",
+    "word_count":71,
+    "tags":[
+      "Python",
+      "API Development",
+      "Application Security"
+    ],
+    "published_date":"2026-03-01T14:00:00.000",
+    "author":"author_8",
+    "fingerprint":"e6593713f83007d66c3c6383f3add349"
+  }
+]

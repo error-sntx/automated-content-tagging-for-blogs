@@ -1,0 +1,78 @@
+{
+  "version": "1.0",
+  "domain": "Machine Learning & Software Engineering",
+  "tags": [
+    {
+      "tag": "Machine Learning",
+      "definition": "Techniques, theory, and models enabling computers to learn from data, including supervised, unsupervised, and reinforcement learning.",
+      "examples": ["Training XGBoost models", "Random forests for classification", "Feature engineering pipelines", "Gradient boosting"],
+      "aliases": ["ml", "machine-learning", "machinelearning", "statistical learning", "predictive modeling", "supervised learning"]
+    },
+    {
+      "tag": "Deep Learning",
+      "definition": "Neural network architectures with multiple layers, including transformers, CNNs, RNNs, and foundation models.",
+      "examples": ["Fine-tuning BERT", "Vision transformers", "Diffusion models", "Backpropagation in PyTorch"],
+      "aliases": ["dl", "deep-learning", "neural networks", "deep neural networks", "transformers", "llm", "large language models"]
+    },
+    {
+      "tag": "Natural Language Processing",
+      "definition": "Computational analysis, synthesis, and understanding of human language.",
+      "examples": ["Sentiment analysis", "Tokenization and lemmatization", "Named entity recognition", "Text classification"],
+      "aliases": ["nlp", "text mining", "text processing", "computational linguistics", "speech to text", "ner"]
+    },
+    {
+      "tag": "Python",
+      "definition": "The Python programming language, runtime, ecosystem, and standard library.",
+      "examples": ["Asyncio in Python", "Python type hints", "Writing pythonic generators", "Virtual environments in Python"],
+      "aliases": ["python3", "py", "cpython", "python programming", "python-scripting"]
+    },
+    {
+      "tag": "API Development",
+      "definition": "Design, construction, documentation, and consumption of web APIs, REST, GraphQL, or gRPC services.",
+      "examples": ["Building FastAPI endpoints", "RESTful API design principles", "GraphQL resolvers", "OpenAPI specifications"],
+      "aliases": ["apis", "rest api", "restful", "graphql", "grpc", "web api", "fastapi", "endpoints"]
+    },
+    {
+      "tag": "Application Security",
+      "definition": "Hardening software applications against vulnerabilities, authentication, authorization, and secure coding practices.",
+      "examples": ["OAuth2 and JWT flows", "SQL injection mitigation", "Cross-site scripting prevention", "Penetration testing"],
+      "aliases": ["appsec", "cybersecurity", "security", "auth", "jwt", "oauth", "secure coding", "vulnerability"]
+    },
+    {
+      "tag": "DevOps & Cloud",
+      "definition": "Continuous integration, deployment, containerization, cloud infrastructure, and operational reliability.",
+      "examples": ["Docker multi-stage builds", "Kubernetes cluster autoscaling", "Terraform AWS provisioning", "GitHub Actions CI/CD"],
+      "aliases": ["devops", "cloud", "aws", "gcp", "azure", "docker", "containers", "kubernetes", "k8s", "ci/cd", "terraform", "infrastructure"]
+    },
+    {
+      "tag": "Database Systems",
+      "definition": "Relational and non-relational database architecture, query optimization, indexing, and storage engines.",
+      "examples": ["PostgreSQL indexing strategies", "MongoDB sharding", "ACID transactions", "Query execution plan tuning"],
+      "aliases": ["databases", "database", "sql", "nosql", "postgres", "postgresql", "mysql", "mongodb", "redis", "indexing"]
+    },
+    {
+      "tag": "Frontend Development",
+      "definition": "Client-side web development, browser rendering, JavaScript/TypeScript UI frameworks, and design systems.",
+      "examples": ["React hook optimization", "Vue component lifecycle", "CSS Grid layouts", "Tailwind CSS styling"],
+      "aliases": ["frontend", "front-end", "ui", "react", "reactjs", "vue", "vuejs", "javascript", "typescript", "css", "html5"]
+    },
+    {
+      "tag": "Data Engineering",
+      "definition": "Building data pipelines, batch/streaming processing, ETL, warehousing, and distributed data systems.",
+      "examples": ["Apache Spark jobs", "Kafka event streaming", "Snowflake data warehouse modeling", "Airflow DAG scheduling"],
+      "aliases": ["data-engineering", "etl", "data pipelines", "spark", "kafka", "data lake", "data warehouse", "airflow"]
+    },
+    {
+      "tag": "Software Architecture",
+      "definition": "High-level design of software systems, microservices, design patterns, and distributed system trade-offs.",
+      "examples": ["Event-driven architectures", "Hexagonal architecture", "Microservices vs monoliths", "CAP theorem trade-offs"],
+      "aliases": ["system design", "architecture", "microservices", "design patterns", "distributed systems", "domain driven design"]
+    },
+    {
+      "tag": "Performance Optimization",
+      "definition": "Profiling, latency reduction, memory management, caching, and algorithmic efficiency.",
+      "examples": ["Memory leak profiling", "Database connection pooling", "Redis caching patterns", "Concurrency scaling"],
+      "aliases": ["performance", "optimization", "profiling", "latency", "benchmarking", "caching", "speed"]
+    }
+  ]
+}

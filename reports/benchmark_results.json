@@ -1,0 +1,624 @@
+{
+  "optimal_threshold": 0.2,
+  "threshold_sweep_tfidf": [
+    {
+      "threshold": 0.2,
+      "micro_f1": 0.5926,
+      "macro_f1": 0.3806,
+      "precision@3": 0.4,
+      "recall@3": 0.4333,
+      "review_coverage_rate": 0.4
+    },
+    {
+      "threshold": 0.3,
+      "micro_f1": 0.5926,
+      "macro_f1": 0.3806,
+      "precision@3": 0.4,
+      "recall@3": 0.4333,
+      "review_coverage_rate": 0.4
+    },
+    {
+      "threshold": 0.35,
+      "micro_f1": 0.5926,
+      "macro_f1": 0.3806,
+      "precision@3": 0.4,
+      "recall@3": 0.4333,
+      "review_coverage_rate": 0.4
+    },
+    {
+      "threshold": 0.4,
+      "micro_f1": 0.5714,
+      "macro_f1": 0.25,
+      "precision@3": 0.4333,
+      "recall@3": 0.4333,
+      "review_coverage_rate": 0.4
+    },
+    {
+      "threshold": 0.5,
+      "micro_f1": 0.3529,
+      "macro_f1": 0.1389,
+      "precision@3": 0.4,
+      "recall@3": 0.2333,
+      "review_coverage_rate": 0.8
+    },
+    {
+      "threshold": 0.6,
+      "micro_f1": 0.4444,
+      "macro_f1": 0.1806,
+      "precision@3": 0.4,
+      "recall@3": 0.3,
+      "review_coverage_rate": 1.0
+    }
+  ],
+  "threshold_sweep_semantic": [
+    {
+      "threshold": 0.2,
+      "micro_f1": 0.5926,
+      "macro_f1": 0.3944,
+      "precision@3": 0.4667,
+      "recall@3": 0.5333,
+      "review_coverage_rate": 0.4
+    },
+    {
+      "threshold": 0.3,
+      "micro_f1": 0.5926,
+      "macro_f1": 0.3944,
+      "precision@3": 0.4667,
+      "recall@3": 0.5333,
+      "review_coverage_rate": 0.4
+    },
+    {
+      "threshold": 0.35,
+      "micro_f1": 0.5926,
+      "macro_f1": 0.3944,
+      "precision@3": 0.4667,
+      "recall@3": 0.5333,
+      "review_coverage_rate": 0.4
+    },
+    {
+      "threshold": 0.4,
+      "micro_f1": 0.5926,
+      "macro_f1": 0.3944,
+      "precision@3": 0.4667,
+      "recall@3": 0.5333,
+      "review_coverage_rate": 0.4
+    },
+    {
+      "threshold": 0.5,
+      "micro_f1": 0.6364,
+      "macro_f1": 0.3611,
+      "precision@3": 0.5333,
+      "recall@3": 0.4333,
+      "review_coverage_rate": 0.4
+    },
+    {
+      "threshold": 0.6,
+      "micro_f1": 0.5556,
+      "macro_f1": 0.3333,
+      "precision@3": 0.5333,
+      "recall@3": 0.4,
+      "review_coverage_rate": 0.6
+    }
+  ],
+  "test_results": {
+    "keyword": {
+      "model": "keyword",
+      "threshold": 0.2,
+      "total_test_articles": 6,
+      "micro_f1": 0.6957,
+      "macro_f1": 0.5556,
+      "micro_precision": 0.6667,
+      "micro_recall": 0.7273,
+      "precision@3": 0.6389,
+      "recall@3": 0.6667,
+      "avg_latency_ms": 1.5,
+      "review_coverage_rate": 0.1667,
+      "review_routed_count": 1,
+      "short_draft_count": 1,
+      "per_tag_metrics": {
+        "Machine Learning": {
+          "f1": 0.0,
+          "support": 0
+        },
+        "Deep Learning": {
+          "f1": 0.0,
+          "support": 0
+        },
+        "Natural Language Processing": {
+          "f1": 0.0,
+          "support": 1
+        },
+        "Python": {
+          "f1": 0.6667,
+          "support": 1
+        },
+        "API Development": {
+          "f1": 1.0,
+          "support": 1
+        },
+        "Application Security": {
+          "f1": 1.0,
+          "support": 1
+        },
+        "DevOps & Cloud": {
+          "f1": 0.6667,
+          "support": 2
+        },
+        "Database Systems": {
+          "f1": 0.6667,
+          "support": 1
+        },
+        "Frontend Development": {
+          "f1": 0.6667,
+          "support": 1
+        },
+        "Data Engineering": {
+          "f1": 1.0,
+          "support": 1
+        },
+        "Software Architecture": {
+          "f1": 0.0,
+          "support": 1
+        },
+        "Performance Optimization": {
+          "f1": 1.0,
+          "support": 1
+        }
+      },
+      "error_examples": [
+        {
+          "id": "post-1025",
+          "title": "Micro-Frontends in 2026: Module Federation and Independent Release Trains",
+          "ground_truth": [
+            "Frontend Development",
+            "Software Architecture"
+          ],
+          "predicted": [
+            "Frontend Development"
+          ],
+          "false_positives": [],
+          "false_negatives": [
+            "Software Architecture"
+          ],
+          "status": "confident"
+        },
+        {
+          "id": "post-1027",
+          "title": "Data Contracts and Schema Testing with Python and Pydantic in ETL Pipelines",
+          "ground_truth": [
+            "Data Engineering",
+            "Python"
+          ],
+          "predicted": [
+            "Python",
+            "Data Engineering",
+            "Machine Learning"
+          ],
+          "false_positives": [
+            "Machine Learning"
+          ],
+          "false_negatives": [],
+          "status": "confident"
+        },
+        {
+          "id": "post-1028",
+          "title": "Kubernetes Autoscaling at Scale: KEDA and Custom Metric Optimization",
+          "ground_truth": [
+            "DevOps & Cloud",
+            "Performance Optimization"
+          ],
+          "predicted": [
+            "DevOps & Cloud",
+            "Performance Optimization",
+            "Database Systems",
+            "Frontend Development"
+          ],
+          "false_positives": [
+            "Frontend Development",
+            "Database Systems"
+          ],
+          "false_negatives": [],
+          "status": "confident"
+        },
+        {
+          "id": "post-1029",
+          "title": "Building a Production Semantic Search API with Hybrid Dense-Sparse Ranking",
+          "ground_truth": [
+            "Natural Language Processing",
+            "API Development"
+          ],
+          "predicted": [
+            "Python",
+            "API Development"
+          ],
+          "false_positives": [
+            "Python"
+          ],
+          "false_negatives": [
+            "Natural Language Processing"
+          ],
+          "status": "confident"
+        },
+        {
+          "id": "post-1030",
+          "title": "Quick reminder on Docker compose flags",
+          "ground_truth": [
+            "DevOps & Cloud"
+          ],
+          "predicted": [],
+          "false_positives": [],
+          "false_negatives": [
+            "DevOps & Cloud"
+          ],
+          "status": "flagged_short_draft"
+        }
+      ]
+    },
+    "tfidf": {
+      "model": "tfidf",
+      "threshold": 0.2,
+      "total_test_articles": 6,
+      "micro_f1": 0.4444,
+      "macro_f1": 0.4444,
+      "micro_precision": 0.32,
+      "micro_recall": 0.7273,
+      "precision@3": 0.3333,
+      "recall@3": 0.5,
+      "avg_latency_ms": 6.05,
+      "review_coverage_rate": 0.1667,
+      "review_routed_count": 1,
+      "short_draft_count": 1,
+      "per_tag_metrics": {
+        "Machine Learning": {
+          "f1": 0.0,
+          "support": 0
+        },
+        "Deep Learning": {
+          "f1": 0.0,
+          "support": 0
+        },
+        "Natural Language Processing": {
+          "f1": 1.0,
+          "support": 1
+        },
+        "Python": {
+          "f1": 0.3333,
+          "support": 1
+        },
+        "API Development": {
+          "f1": 0.0,
+          "support": 1
+        },
+        "Application Security": {
+          "f1": 0.5,
+          "support": 1
+        },
+        "DevOps & Cloud": {
+          "f1": 0.5,
+          "support": 2
+        },
+        "Database Systems": {
+          "f1": 0.5,
+          "support": 1
+        },
+        "Frontend Development": {
+          "f1": 1.0,
+          "support": 1
+        },
+        "Data Engineering": {
+          "f1": 1.0,
+          "support": 1
+        },
+        "Software Architecture": {
+          "f1": 0.0,
+          "support": 1
+        },
+        "Performance Optimization": {
+          "f1": 0.5,
+          "support": 1
+        }
+      },
+      "error_examples": [
+        {
+          "id": "post-1025",
+          "title": "Micro-Frontends in 2026: Module Federation and Independent Release Trains",
+          "ground_truth": [
+            "Frontend Development",
+            "Software Architecture"
+          ],
+          "predicted": [
+            "Frontend Development",
+            "Performance Optimization",
+            "Application Security",
+            "API Development",
+            "Python"
+          ],
+          "false_positives": [
+            "Application Security",
+            "Python",
+            "Performance Optimization",
+            "API Development"
+          ],
+          "false_negatives": [
+            "Software Architecture"
+          ],
+          "status": "confident"
+        },
+        {
+          "id": "post-1026",
+          "title": "Database Hardening: Row-Level Security and Column Encryption in Postgres",
+          "ground_truth": [
+            "Application Security",
+            "Database Systems"
+          ],
+          "predicted": [
+            "Application Security",
+            "Database Systems",
+            "Python",
+            "Software Architecture",
+            "API Development"
+          ],
+          "false_positives": [
+            "Python",
+            "Software Architecture",
+            "API Development"
+          ],
+          "false_negatives": [],
+          "status": "confident"
+        },
+        {
+          "id": "post-1027",
+          "title": "Data Contracts and Schema Testing with Python and Pydantic in ETL Pipelines",
+          "ground_truth": [
+            "Data Engineering",
+            "Python"
+          ],
+          "predicted": [
+            "Python",
+            "Machine Learning",
+            "DevOps & Cloud",
+            "Data Engineering",
+            "Database Systems"
+          ],
+          "false_positives": [
+            "Machine Learning",
+            "DevOps & Cloud",
+            "Database Systems"
+          ],
+          "false_negatives": [],
+          "status": "confident"
+        },
+        {
+          "id": "post-1028",
+          "title": "Kubernetes Autoscaling at Scale: KEDA and Custom Metric Optimization",
+          "ground_truth": [
+            "DevOps & Cloud",
+            "Performance Optimization"
+          ],
+          "predicted": [
+            "DevOps & Cloud",
+            "Database Systems",
+            "Software Architecture",
+            "Python",
+            "Performance Optimization"
+          ],
+          "false_positives": [
+            "Python",
+            "Database Systems",
+            "Software Architecture"
+          ],
+          "false_negatives": [],
+          "status": "confident"
+        },
+        {
+          "id": "post-1029",
+          "title": "Building a Production Semantic Search API with Hybrid Dense-Sparse Ranking",
+          "ground_truth": [
+            "Natural Language Processing",
+            "API Development"
+          ],
+          "predicted": [
+            "Natural Language Processing",
+            "Python",
+            "Deep Learning",
+            "Performance Optimization",
+            "Application Security"
+          ],
+          "false_positives": [
+            "Application Security",
+            "Python",
+            "Performance Optimization",
+            "Deep Learning"
+          ],
+          "false_negatives": [
+            "API Development"
+          ],
+          "status": "confident"
+        }
+      ]
+    },
+    "semantic": {
+      "model": "semantic",
+      "threshold": 0.2,
+      "total_test_articles": 6,
+      "micro_f1": 0.4444,
+      "macro_f1": 0.4444,
+      "micro_precision": 0.32,
+      "micro_recall": 0.7273,
+      "precision@3": 0.3889,
+      "recall@3": 0.5833,
+      "avg_latency_ms": 43.22,
+      "review_coverage_rate": 0.1667,
+      "review_routed_count": 1,
+      "short_draft_count": 1,
+      "per_tag_metrics": {
+        "Machine Learning": {
+          "f1": 0.0,
+          "support": 0
+        },
+        "Deep Learning": {
+          "f1": 0.0,
+          "support": 0
+        },
+        "Natural Language Processing": {
+          "f1": 1.0,
+          "support": 1
+        },
+        "Python": {
+          "f1": 0.6667,
+          "support": 1
+        },
+        "API Development": {
+          "f1": 0.0,
+          "support": 1
+        },
+        "Application Security": {
+          "f1": 0.6667,
+          "support": 1
+        },
+        "DevOps & Cloud": {
+          "f1": 0.3333,
+          "support": 2
+        },
+        "Database Systems": {
+          "f1": 0.5,
+          "support": 1
+        },
+        "Frontend Development": {
+          "f1": 1.0,
+          "support": 1
+        },
+        "Data Engineering": {
+          "f1": 0.6667,
+          "support": 1
+        },
+        "Software Architecture": {
+          "f1": 0.0,
+          "support": 1
+        },
+        "Performance Optimization": {
+          "f1": 0.5,
+          "support": 1
+        }
+      },
+      "error_examples": [
+        {
+          "id": "post-1025",
+          "title": "Micro-Frontends in 2026: Module Federation and Independent Release Trains",
+          "ground_truth": [
+            "Frontend Development",
+            "Software Architecture"
+          ],
+          "predicted": [
+            "Frontend Development",
+            "DevOps & Cloud",
+            "API Development",
+            "Performance Optimization",
+            "Application Security"
+          ],
+          "false_positives": [
+            "DevOps & Cloud",
+            "Application Security",
+            "Performance Optimization",
+            "API Development"
+          ],
+          "false_negatives": [
+            "Software Architecture"
+          ],
+          "status": "confident"
+        },
+        {
+          "id": "post-1026",
+          "title": "Database Hardening: Row-Level Security and Column Encryption in Postgres",
+          "ground_truth": [
+            "Application Security",
+            "Database Systems"
+          ],
+          "predicted": [
+            "Application Security",
+            "Database Systems",
+            "Software Architecture",
+            "API Development",
+            "DevOps & Cloud"
+          ],
+          "false_positives": [
+            "DevOps & Cloud",
+            "Software Architecture",
+            "API Development"
+          ],
+          "false_negatives": [],
+          "status": "confident"
+        },
+        {
+          "id": "post-1027",
+          "title": "Data Contracts and Schema Testing with Python and Pydantic in ETL Pipelines",
+          "ground_truth": [
+            "Data Engineering",
+            "Python"
+          ],
+          "predicted": [
+            "Python",
+            "Database Systems",
+            "Data Engineering",
+            "Machine Learning",
+            "DevOps & Cloud"
+          ],
+          "false_positives": [
+            "DevOps & Cloud",
+            "Machine Learning",
+            "Database Systems"
+          ],
+          "false_negatives": [],
+          "status": "confident"
+        },
+        {
+          "id": "post-1028",
+          "title": "Kubernetes Autoscaling at Scale: KEDA and Custom Metric Optimization",
+          "ground_truth": [
+            "DevOps & Cloud",
+            "Performance Optimization"
+          ],
+          "predicted": [
+            "DevOps & Cloud",
+            "Software Architecture",
+            "Database Systems",
+            "Data Engineering",
+            "Performance Optimization"
+          ],
+          "false_positives": [
+            "Data Engineering",
+            "Database Systems",
+            "Software Architecture"
+          ],
+          "false_negatives": [],
+          "status": "confident"
+        },
+        {
+          "id": "post-1029",
+          "title": "Building a Production Semantic Search API with Hybrid Dense-Sparse Ranking",
+          "ground_truth": [
+            "Natural Language Processing",
+            "API Development"
+          ],
+          "predicted": [
+            "Python",
+            "Natural Language Processing",
+            "Deep Learning",
+            "Machine Learning",
+            "Performance Optimization"
+          ],
+          "false_positives": [
+            "Machine Learning",
+            "Python",
+            "Performance Optimization",
+            "Deep Learning"
+          ],
+          "false_negatives": [
+            "API Development"
+          ],
+          "status": "confident"
+        }
+      ]
+    }
+  }
+}

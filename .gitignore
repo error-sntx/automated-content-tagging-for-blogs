@@ -1,0 +1,26 @@
+# Virtual Environment
+.venv/
+env/
+venv/
+ENV/
+
+# Python cache & compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs & temp files
+*.log
+.temp/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Large model cache (SentenceTransformer downloads automatically if missing)
+models/all-MiniLM-L6-v2/model.safetensors

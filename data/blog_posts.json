@@ -1,0 +1,452 @@
+[
+  {
+    "id": "post-1001",
+    "title": "Hardening FastAPI Services: JWT Authentication and Rate Limiting",
+    "body": "<nav><a href='/'>Home</a> > <a href='/api'>APIs</a></nav>\n            # Hardening FastAPI Services: JWT Authentication and Rate Limiting\n            In modern API development, securing backend endpoints is paramount. Using FastAPI with Python, we can implement robust OAuth2 bearer token authentication with JSON Web Tokens (JWT).\n            We demonstrate password hashing using passlib and Bcrypt, token expiration validation, and middleware for sliding window rate limiting.\n            Protecting against credential stuffing and brute-force attacks requires careful HTTP status code handling and CORS configuration.\n            <div class='tag-footer'>Tags: python, fastapi, security</div>\n            <footer>Share on Twitter | Leave a comment below. Copyright 2025 TechBlog</footer>",
+    "tags": [
+      "Python",
+      "API Development",
+      "Application Security"
+    ],
+    "published_date": "2025-01-15T10:00:00",
+    "author": "author_2"
+  },
+  {
+    "id": "post-1002",
+    "title": "Building Scalable Feature Stores with Python and Apache Spark",
+    "body": "<h1>Feature Store Architecture for Machine Learning</h1>\n            Managing feature parity between offline training and online inference is a classic challenge in machine learning pipelines.\n            In this guide, we use Python alongside Apache Spark and Delta Lake to compute time-travel aggregations, batch feature vectors, and stream real-time events.\n            We will write reproducible ETL jobs that register schema definitions and publish feature snapshots for model training.\n            <p>Subscribe to our newsletter for more updates!</p>",
+    "tags": [
+      "Machine Learning",
+      "Python",
+      "Data Engineering"
+    ],
+    "published_date": "2025-02-01T14:30:00",
+    "author": "author_8"
+  },
+  {
+    "id": "post-1003",
+    "title": "Quantization and Low-Rank Adaptation (LoRA) for LLM Inference Speed",
+    "body": "## Optimizing Transformer Inference Latency\n            Deploying large language models (LLMs) requires minimizing memory footprint and latency. We explore 4-bit and 8-bit post-training quantization (AWQ and bitsandbytes) for transformer decoders.\n            Using PyTorch and Hugging Face, we show how low-rank adaptation reduces parameter count during fine-tuning while KV-cache compression improves tokens-per-second throughput on single GPUs.\n            Benchmarking shows a 3.4x speedup with minimal degradation on text generation benchmarks.",
+    "tags": [
+      "Deep Learning",
+      "Natural Language Processing",
+      "Performance Optimization"
+    ],
+    "published_date": "2025-02-20T09:15:00",
+    "author": "author_2"
+  },
+  {
+    "id": "post-1004",
+    "title": "Designing Multi-Region Active-Active Architectures on AWS with Kubernetes",
+    "body": "<h3>Multi-Region Distributed Systems</h3>\n            High availability at global scale demands multi-region deployment strategies. We examine Route 53 latency-based routing, Amazon EKS multi-cluster orchestration, and Terraform modules for declarative infrastructure.\n            Key trade-offs include cross-region database replication lag, eventual consistency vs ACID guarantees, and automated failover runbooks during regional cloud outages.",
+    "tags": [
+      "DevOps & Cloud",
+      "Software Architecture"
+    ],
+    "published_date": "2025-03-05T11:20:00",
+    "author": "author_7"
+  },
+  {
+    "id": "post-1005",
+    "title": "PostgreSQL Query Optimization: Index Scans, Partitioning, and Explain Plans",
+    "body": "Analyzing slow queries in PostgreSQL begins with EXPLAIN (ANALYZE, BUFFERS). We walk through diagnosing sequential scans, index bloat, and vacuuming deficits.\n            We cover B-tree vs BRIN indexes for time-series data, declarative table partitioning, and configuring work_mem and shared_buffers for high-throughput transactional database workloads.",
+    "tags": [
+      "Database Systems",
+      "Performance Optimization"
+    ],
+    "published_date": "2025-03-25T16:00:00",
+    "author": "author_6"
+  },
+  {
+    "id": "post-1006",
+    "title": "Mastering React Server Components and Core Web Vitals",
+    "body": "<div class='nav-bar'><a href='/web'>Web</a></div>\n            React Server Components (RSC) fundamentally shift how frontend web applications render UI. By rendering data-heavy components on the server, client JavaScript bundle size drops drastically.\n            We measure Largest Contentful Paint (LCP) and Cumulative Layout Shift (CLS) before and after streaming SSR with Suspense boundaries.\n            Code splitting and CSS-in-JS trade-offs are evaluated for enterprise frontend codebases.",
+    "tags": [
+      "Frontend Development",
+      "Performance Optimization"
+    ],
+    "published_date": "2025-04-10T12:00:00",
+    "author": "author_5"
+  },
+  {
+    "id": "post-1007",
+    "title": "Practical Transfer Learning with PyTorch: Fine-Tuning Vision Transformers",
+    "body": "Transfer learning allows practitioners to leverage pretrained foundation models for niche image classification tasks.\n            We implement an end-to-end PyTorch script in Python, freezing base layers, replacing the classification head, and scheduling learning rate decay with AdamW.\n            We explore data augmentation with Albumentations, mixup regularization, and validation loss tracking.",
+    "tags": [
+      "Machine Learning",
+      "Deep Learning",
+      "Python"
+    ],
+    "published_date": "2025-05-02T15:45:00",
+    "author": "author_2"
+  },
+  {
+    "id": "post-1008",
+    "title": "Event-Driven Microservices with gRPC and Distributed PostgreSQL Databases",
+    "body": "When decomposing a monolith into microservices, synchronous REST calls can introduce cascading failures.\n            We explore gRPC protocols with Protocol Buffers for internal service communication, alongside the Outbox pattern for transactional consistency across isolated PostgreSQL instances.\n            Idempotent consumer handlers prevent duplicate message execution.",
+    "tags": [
+      "API Development",
+      "Database Systems",
+      "Software Architecture"
+    ],
+    "published_date": "2025-05-20T10:10:00",
+    "author": "author_5"
+  },
+  {
+    "id": "post-1009",
+    "title": "Named Entity Recognition and Information Extraction with Spacy and Scikit-Learn",
+    "body": "Extracting structured entities from unstructured text is a cornerstone of NLP.\n            We demonstrate building a custom NER pipeline in Python using SpaCy tokenizers combined with a CRF (Conditional Random Field) and TF-IDF logistic regression classifier.\n            Evaluation metrics include entity-level precision, recall, and token classification confusion matrices.",
+    "tags": [
+      "Natural Language Processing",
+      "Machine Learning",
+      "Python"
+    ],
+    "published_date": "2025-06-12T08:30:00",
+    "author": "author_5"
+  },
+  {
+    "id": "post-1010",
+    "title": "Container Security and Supply Chain Defense: Trivy, Cosign, and Kubernetes RBAC",
+    "body": "Securing Kubernetes environments starts in the CI/CD pipeline.\n            We configure automated vulnerability scanning with Trivy to inspect container base images for CVEs, sign OCI artifacts with Cosign, and enforce immutable pod security standards.\n            We restrict service account privileges via strict Kubernetes Role-Based Access Control (RBAC) policies.",
+    "tags": [
+      "Application Security",
+      "DevOps & Cloud"
+    ],
+    "published_date": "2025-07-01T13:40:00",
+    "author": "author_3"
+  },
+  {
+    "id": "post-1011",
+    "title": "Real-Time Streaming Pipelines with Kafka, Flink, and ClickHouse",
+    "body": "High-throughput telemetry requires streaming analytics architectures.\n            We deploy Apache Kafka on Kubernetes to ingest millions of events per second, process stateful stream windows with Apache Flink, and sink aggregated metrics into ClickHouse for sub-second analytical queries.\n            We monitor consumer lag and backpressure using Prometheus.",
+    "tags": [
+      "Data Engineering",
+      "DevOps & Cloud",
+      "Database Systems"
+    ],
+    "published_date": "2025-07-22T17:15:00",
+    "author": "author_7"
+  },
+  {
+    "id": "post-1012",
+    "title": "Building Offline-First Web Apps with TypeScript, Service Workers, and GraphQL",
+    "body": "Modern web applications need to handle intermittent network connectivity gracefully.\n            We utilize Apollo Client with cache persistence, background sync via Service Workers, and IndexedDB for local data storage in TypeScript.\n            Optimistic UI updates ensure instantaneous user feedback while syncing mutations with the GraphQL API in the background.",
+    "tags": [
+      "Frontend Development",
+      "API Development"
+    ],
+    "published_date": "2025-08-14T11:00:00",
+    "author": "author_3"
+  },
+  {
+    "id": "post-1013",
+    "title": "Accelerating Scikit-Learn Pipelines with Intel Extension and ONNX Runtime",
+    "body": "Training and serving classical machine learning models at low latency can be achieved without heavy neural networks.\n            We profile scikit-learn random forests and gradient boosted trees in Python, convert trained estimators into ONNX graphs, and run inference with ONNX Runtime.\n            Benchmark results demonstrate a 5x reduction in P99 inference latency.",
+    "tags": [
+      "Machine Learning",
+      "Performance Optimization",
+      "Python"
+    ],
+    "published_date": "2025-09-05T09:20:00",
+    "author": "author_8"
+  },
+  {
+    "id": "post-1014",
+    "title": "Zero Trust Architecture: Identity-Aware Proxies and Microsegmentation",
+    "body": "Perimeter-based network security is no longer sufficient.\n            Zero Trust Architecture assumes breach and verifies every request explicitly.\n            We examine mutual TLS (mTLS) with SPIFFE/SPIRE, continuous contextual authorization, identity-aware proxies, and microsegmentation policies across distributed systems.",
+    "tags": [
+      "Software Architecture",
+      "Application Security"
+    ],
+    "published_date": "2025-09-28T14:10:00",
+    "author": "author_4"
+  },
+  {
+    "id": "post-1015",
+    "title": "Retrieval-Augmented Generation (RAG) Architecture: Embeddings, Vector Stores, and Re-ranking",
+    "body": "RAG pipelines overcome hallucination in generative AI by grounding LLM responses in proprietary enterprise knowledge.\n            We review dense vector embeddings, HNSW index construction in vector databases, hybrid BM25 lexical retrieval, and cross-encoder re-ranking for contextual precision.\n            Evaluation is conducted using Faithfulness and Answer Relevance metrics.",
+    "tags": [
+      "Deep Learning",
+      "Natural Language Processing"
+    ],
+    "published_date": "2025-10-18T16:40:00",
+    "author": "author_5"
+  },
+  {
+    "id": "post-1016",
+    "title": "Automating Multi-Cloud Infrastructure with Pulumi and Python",
+    "body": "Infrastructure as Code (IaC) moves beyond static domain-specific languages.\n            Using Python and Pulumi, software engineers can write object-oriented infrastructure configurations, utilize standard unit testing frameworks (pytest), and provision cloud resources across AWS and Google Cloud Platform.\n            We build reusable custom components and manage secrets securely.",
+    "tags": [
+      "DevOps & Cloud",
+      "Python"
+    ],
+    "published_date": "2025-11-10T10:05:00",
+    "author": "author_2"
+  },
+  {
+    "id": "post-1017",
+    "title": "Content Security Policy (CSP) and Cross-Site Scripting (XSS) Prevention in Modern SPAs",
+    "body": "Frontend single-page applications are vulnerable to DOM-based XSS and malicious third-party script injection.\n            We dissect strict Content Security Policy (CSP) headers, nonce generation, Trusted Types API, and sanitizing user inputs in React and Angular applications.\n            Audit workflows with Chrome DevTools are demonstrated.",
+    "tags": [
+      "Frontend Development",
+      "Application Security"
+    ],
+    "published_date": "2025-12-02T13:25:00",
+    "author": "author_1"
+  },
+  {
+    "id": "post-1018",
+    "title": "Modernizing Data Warehouses: Transitioning from Traditional OLAP to Iceberg and DuckDB",
+    "body": "Apache Iceberg table formats offer ACID transactions, partition evolution, and schema enforcement over object storage.\n            We showcase pairing DuckDB with Iceberg catalogs in Python to run analytical SQL queries directly on parquet files without standing up costly database clusters.\n            Query execution speeds and storage cost reductions are evaluated.",
+    "tags": [
+      "Database Systems",
+      "Data Engineering"
+    ],
+    "published_date": "2025-12-20T15:30:00",
+    "author": "author_8"
+  },
+  {
+    "id": "post-1019",
+    "title": "End-to-End Multimodal Content Understanding: Text, Vision, and Semantic Tagging",
+    "body": "In this comprehensive guide, we construct an end-to-end multimodal classification engine.\n            We combine sentence transformer embeddings for article text with CLIP image representations for blog diagrams.\n            The multimodal embeddings are fed into a multi-label classification head evaluated across macro-F1 and micro-F1 scores on thousands of domain-specific articles.\n            We share lessons on balancing loss functions and handling class imbalance.",
+    "tags": [
+      "Machine Learning",
+      "Deep Learning",
+      "Natural Language Processing"
+    ],
+    "published_date": "2026-01-12T11:50:00",
+    "author": "author_5"
+  },
+  {
+    "id": "post-1020",
+    "title": "Draft: Notes on Redis Caching",
+    "body": "Need to write a post about setting up Redis memory limits and TTL strategies. Notes: redis-cli, LRU eviction.",
+    "tags": [
+      "Database Systems",
+      "Performance Optimization"
+    ],
+    "published_date": "2026-02-05T09:00:00",
+    "author": "author_6"
+  },
+  {
+    "id": "post-1021",
+    "title": "WIP: Microservices Logging",
+    "body": "TODO: add content",
+    "tags": [
+      "Software Architecture",
+      "DevOps & Cloud"
+    ],
+    "published_date": "2026-02-18T10:00:00",
+    "author": "author_4"
+  },
+  {
+    "id": "post-1022",
+    "title": "Hardening FastAPI Services: JWT Authentication and Rate Limiting (Updated 2026)",
+    "body": "<nav><a href='/'>Home</a></nav>\n            # Hardening FastAPI Services: JWT Authentication and Rate Limiting (Updated 2026)\n            In modern API development, securing backend endpoints is paramount. Using FastAPI with Python, we can implement robust OAuth2 bearer token authentication with JSON Web Tokens (JWT).\n            We demonstrate password hashing using passlib and Bcrypt, token expiration validation, and middleware for sliding window rate limiting.\n            Protecting against credential stuffing and brute-force attacks requires careful HTTP status code handling and CORS configuration.\n            <footer>Republished with updated 2026 dependencies.</footer>",
+    "tags": [
+      "Python",
+      "API Development",
+      "Application Security"
+    ],
+    "published_date": "2026-03-01T14:00:00",
+    "author": "author_8"
+  },
+  {
+    "id": "post-1023",
+    "title": "Fine-Tuning Small Language Models with PyTorch and Unsloth in Python",
+    "body": "Running small language models (SLMs) locally is becoming viable for specialized developer workflows.\n            We use Python to fine-tune Llama-3-8B and Mistral using QLoRA and FlashAttention-2.\n            Memory consumption during gradient computation is reduced by 60%, allowing training on consumer grade hardware.\n            Evaluation shows domain adaptation accuracy gains on coding datasets.",
+    "tags": [
+      "Python",
+      "Machine Learning",
+      "Deep Learning"
+    ],
+    "published_date": "2026-04-15T10:30:00",
+    "author": "author_7"
+  },
+  {
+    "id": "post-1024",
+    "title": "High-Throughput HTTP APIs: Connection Pooling, HTTP/2, and Keep-Alive Strategies",
+    "body": "When scaling microservices to handle tens of thousands of requests per second, HTTP connection overhead becomes a primary bottleneck.\n            We profile connection handshake latencies, configure persistent TCP keep-alive pools, and test HTTP/2 multiplexing in asynchronous web servers.\n            Latency percentiles (P95 and P99) show significant stabilization under burst traffic.",
+    "tags": [
+      "API Development",
+      "Performance Optimization"
+    ],
+    "published_date": "2026-05-10T14:15:00",
+    "author": "author_1"
+  },
+  {
+    "id": "post-1025",
+    "title": "Micro-Frontends in 2026: Module Federation and Independent Release Trains",
+    "body": "Breaking large frontend web applications into autonomously deployed micro-frontends reduces cross-team coordination bottlenecks.\n            We architect a web platform using Webpack Module Federation with React and TypeScript.\n            Shared state management, design tokens, and version mismatch isolation techniques are examined.",
+    "tags": [
+      "Frontend Development",
+      "Software Architecture"
+    ],
+    "published_date": "2026-06-01T09:45:00",
+    "author": "author_3"
+  },
+  {
+    "id": "post-1026",
+    "title": "Database Hardening: Row-Level Security and Column Encryption in Postgres",
+    "body": "Protecting sensitive customer data requires defense-in-depth within the database layer itself.\n            We demonstrate implementing PostgreSQL Row-Level Security (RLS) policies to enforce tenant isolation at query time.\n            Furthermore, we integrate pgcrypto and envelope encryption keys to protect personally identifiable information (PII) at rest.",
+    "tags": [
+      "Application Security",
+      "Database Systems"
+    ],
+    "published_date": "2026-07-04T12:00:00",
+    "author": "author_4"
+  },
+  {
+    "id": "post-1027",
+    "title": "Data Contracts and Schema Testing with Python and Pydantic in ETL Pipelines",
+    "body": "Data quality issues cascade silently into downstream dashboards and ML features.\n            We implement automated data contracts in Python using Pydantic V2 and Great Expectations.\n            Invalid records are quarantined into dead-letter queues while valid streaming records proceed to analytical warehouse sinks.",
+    "tags": [
+      "Data Engineering",
+      "Python"
+    ],
+    "published_date": "2026-08-11T16:20:00",
+    "author": "author_5"
+  },
+  {
+    "id": "post-1028",
+    "title": "Kubernetes Autoscaling at Scale: KEDA and Custom Metric Optimization",
+    "body": "Standard CPU-based Horizontal Pod Autoscalers (HPA) often react too slowly to traffic spikes.\n            We install KEDA (Kubernetes Event-driven Autoscaling) to trigger pod scaling directly from RabbitMQ queue depths and Redis stream backlog lengths.\n            Cold-start latencies and resource over-provisioning costs are analyzed.",
+    "tags": [
+      "DevOps & Cloud",
+      "Performance Optimization"
+    ],
+    "published_date": "2026-09-02T11:10:00",
+    "author": "author_3"
+  },
+  {
+    "id": "post-1029",
+    "title": "Building a Production Semantic Search API with Hybrid Dense-Sparse Ranking",
+    "body": "Designing an enterprise search API requires combining BM25 keyword matching with dense neural embeddings.\n            We build a FastAPI web endpoint in Python that accepts search queries, computes vector embeddings, and executes reciprocal rank fusion (RRF) across Elasticsearch and Qdrant.\n            Result relevance and response latencies are measured.",
+    "tags": [
+      "Natural Language Processing",
+      "API Development"
+    ],
+    "published_date": "2026-10-01T15:30:00",
+    "author": "author_3"
+  },
+  {
+    "id": "post-1030",
+    "title": "Quick reminder on Docker compose flags",
+    "body": "docker compose up -d --build --remove-orphans",
+    "tags": [
+      "DevOps & Cloud"
+    ],
+    "published_date": "2026-11-05T08:00:00",
+    "author": "author_5"
+  },
+  {
+    "id": "post-1031",
+    "title": "Supervised Classification with Scikit-Learn: Pipelines and Hyperparameter Tuning",
+    "body": "<article>\n        <h1>Supervised Classification with Scikit-Learn: Pipelines and Hyperparameter Tuning</h1>\n        <p>Building robust machine learning pipelines in Python requires encapsulating feature scaling, categorical encoding, and estimator training into scikit-learn Pipelines. We demonstrate randomized search cross-validation, custom transformers, and metric tracking.</p>\n        <p>In this article we step through practical implementation details, code samples, and real-world deployment challenges.</p>\n        <footer><p>Tags: Machine Learning, Python</p><a href='/rss'>RSS Feed</a></footer>\n        </article>",
+    "tags": [
+      "Machine Learning",
+      "Python"
+    ],
+    "published_date": "2025-01-22T00:00:00",
+    "author": "author_6"
+  },
+  {
+    "id": "post-1032",
+    "title": "Distributed Training Strategies: Data Parallel vs Pipeline Parallel in PyTorch",
+    "body": "<article>\n        <h1>Distributed Training Strategies: Data Parallel vs Pipeline Parallel in PyTorch</h1>\n        <p>Training large neural networks exceeds single GPU VRAM. We analyze DistributedDataParallel (DDP), Fully Sharded Data Parallel (FSDP), and tensor parallelism trade-offs across multi-node GPU clusters.</p>\n        <p>In this article we step through practical implementation details, code samples, and real-world deployment challenges.</p>\n        <footer><p>Tags: Deep Learning, Performance Optimization</p><a href='/rss'>RSS Feed</a></footer>\n        </article>",
+    "tags": [
+      "Deep Learning",
+      "Performance Optimization"
+    ],
+    "published_date": "2025-02-21T00:00:00",
+    "author": "author_8"
+  },
+  {
+    "id": "post-1033",
+    "title": "Contract-Driven Development with OpenAPI and TypeScript Generator",
+    "body": "<article>\n        <h1>Contract-Driven Development with OpenAPI and TypeScript Generator</h1>\n        <p>Preventing frontend and backend drift through schema-driven development. We show how backend OpenAPI 3.1 specs automatically generate typed TypeScript API client SDKs with zero manual boilerplate.</p>\n        <p>In this article we step through practical implementation details, code samples, and real-world deployment challenges.</p>\n        <footer><p>Tags: API Development, Frontend Development</p><a href='/rss'>RSS Feed</a></footer>\n        </article>",
+    "tags": [
+      "API Development",
+      "Frontend Development"
+    ],
+    "published_date": "2025-03-23T00:00:00",
+    "author": "author_6"
+  },
+  {
+    "id": "post-1034",
+    "title": "Securing CI/CD Pipelines: Ephemeral Runners and OIDC Federation",
+    "body": "<article>\n        <h1>Securing CI/CD Pipelines: Ephemeral Runners and OIDC Federation</h1>\n        <p>Traditional hardcoded cloud credentials in CI/CD secrets present major security hazards. We implement OpenID Connect (OIDC) federation between GitHub Actions and AWS IAM for credential-less pipeline deployments.</p>\n        <p>In this article we step through practical implementation details, code samples, and real-world deployment challenges.</p>\n        <footer><p>Tags: DevOps & Cloud, Application Security</p><a href='/rss'>RSS Feed</a></footer>\n        </article>",
+    "tags": [
+      "DevOps & Cloud",
+      "Application Security"
+    ],
+    "published_date": "2025-04-22T00:00:00",
+    "author": "author_8"
+  },
+  {
+    "id": "post-1035",
+    "title": "Database Sharding and Distributed Transactions with CockroachDB",
+    "body": "<article>\n        <h1>Database Sharding and Distributed Transactions with CockroachDB</h1>\n        <p>Scaling relational databases horizontally requires understanding distributed consensus and Raft consensus engines. We examine CockroachDB architecture, multi-raft ranges, and cross-node transactional isolation.</p>\n        <p>In this article we step through practical implementation details, code samples, and real-world deployment challenges.</p>\n        <footer><p>Tags: Database Systems, Software Architecture</p><a href='/rss'>RSS Feed</a></footer>\n        </article>",
+    "tags": [
+      "Database Systems",
+      "Software Architecture"
+    ],
+    "published_date": "2025-05-22T00:00:00",
+    "author": "author_4"
+  },
+  {
+    "id": "post-1036",
+    "title": "Tokenization Strategies: BPE, WordPiece, and SentencePiece in Python",
+    "body": "<article>\n        <h1>Tokenization Strategies: BPE, WordPiece, and SentencePiece in Python</h1>\n        <p>Understanding subword tokenization is essential for modern NLP. We build Byte-Pair Encoding and WordPiece tokenizers from scratch in Python, analyzing vocabulary size trade-offs and out-of-vocabulary handling.</p>\n        <p>In this article we step through practical implementation details, code samples, and real-world deployment challenges.</p>\n        <footer><p>Tags: Natural Language Processing, Python</p><a href='/rss'>RSS Feed</a></footer>\n        </article>",
+    "tags": [
+      "Natural Language Processing",
+      "Python"
+    ],
+    "published_date": "2025-06-21T00:00:00",
+    "author": "author_8"
+  },
+  {
+    "id": "post-1037",
+    "title": "Optimizing Apache Spark Shuffle Performance and Memory Management",
+    "body": "<article>\n        <h1>Optimizing Apache Spark Shuffle Performance and Memory Management</h1>\n        <p>Spark shuffle stages frequently cause out-of-memory errors and disk spills. We tune spark.sql.shuffle.partitions, explore adaptive query execution (AQE), and benchmark broadcast hash joins against sorted merge joins.</p>\n        <p>In this article we step through practical implementation details, code samples, and real-world deployment challenges.</p>\n        <footer><p>Tags: Data Engineering, Performance Optimization</p><a href='/rss'>RSS Feed</a></footer>\n        </article>",
+    "tags": [
+      "Data Engineering",
+      "Performance Optimization"
+    ],
+    "published_date": "2025-07-21T00:00:00",
+    "author": "author_8"
+  },
+  {
+    "id": "post-1038",
+    "title": "Event Sourcing and CQRS with Kafka and EventStore",
+    "body": "<article>\n        <h1>Event Sourcing and CQRS with Kafka and EventStore</h1>\n        <p>Separating read and write models with Command Query Responsibility Segregation (CQRS). We trace event immutability, projection building, and eventual consistency challenges in high-volume transaction systems.</p>\n        <p>In this article we step through practical implementation details, code samples, and real-world deployment challenges.</p>\n        <footer><p>Tags: Software Architecture, API Development</p><a href='/rss'>RSS Feed</a></footer>\n        </article>",
+    "tags": [
+      "Software Architecture",
+      "API Development"
+    ],
+    "published_date": "2025-08-20T00:00:00",
+    "author": "author_7"
+  },
+  {
+    "id": "post-1039",
+    "title": "Optimizing Web Fonts and Image Assets for Sub-Second First Contentful Paint",
+    "body": "<article>\n        <h1>Optimizing Web Fonts and Image Assets for Sub-Second First Contentful Paint</h1>\n        <p>Modern websites suffer performance degradation from unoptimized media. We examine responsive picture elements, AVIF/WebP image formats, font-display swap, and subsetting custom web fonts.</p>\n        <p>In this article we step through practical implementation details, code samples, and real-world deployment challenges.</p>\n        <footer><p>Tags: Frontend Development, Performance Optimization</p><a href='/rss'>RSS Feed</a></footer>\n        </article>",
+    "tags": [
+      "Frontend Development",
+      "Performance Optimization"
+    ],
+    "published_date": "2025-09-19T00:00:00",
+    "author": "author_7"
+  },
+  {
+    "id": "post-1040",
+    "title": "Adversarial Machine Learning: Defending Against Data Poisoning and Model Inversion",
+    "body": "<article>\n        <h1>Adversarial Machine Learning: Defending Against Data Poisoning and Model Inversion</h1>\n        <p>Machine learning models in production are susceptible to adversarial evasion attacks and data poisoning. We explore defense mechanisms including input sanitization, differential privacy, and robust adversarial training.</p>\n        <p>In this article we step through practical implementation details, code samples, and real-world deployment challenges.</p>\n        <footer><p>Tags: Machine Learning, Application Security</p><a href='/rss'>RSS Feed</a></footer>\n        </article>",
+    "tags": [
+      "Machine Learning",
+      "Application Security"
+    ],
+    "published_date": "2025-10-19T00:00:00",
+    "author": "author_2"
+  }
+]
