@@ -1,0 +1,289 @@
+article_id,group_id,format,title,content,split
+A001,G001,html,Cloud Computing: a community case study 1,<h1>Cloud Computing: a community case study 1</h1><p>The team measures deployment time and documents a rollback plan. A small shop moves its inventory service to a hosted server. Engineers compare backup recovery with monthly hosting costs. The pilot includes 12 observations and a short checklist for the next review. A transport team predicts demand using historical trip counts.</p><footer>Subscribe and share this article.</footer>,train
+A002,G001,markdown,Cloud Computing: a community case study 1,"# Cloud Computing: a community case study 1
+
+Engineers compare backup recovery with monthly hosting costs. A small shop moves its inventory service to a hosted server. The team measures deployment time and documents a rollback plan. The pilot includes 12 observations and a short checklist for the next review. A transport team predicts demand using historical trip counts.
+
+Subscribe and share this article.",train
+A003,G002,html,Machine Learning: a community case study 2,<h1>Machine Learning: a community case study 2</h1><p>A simple prediction baseline reveals where the model needs improvement. A transport team predicts demand using historical trip counts. Analysts separate training records from later evaluation observations. The pilot includes 13 observations and a short checklist for the next review.</p><footer>Subscribe and share this article.</footer>,train
+A004,G002,markdown,Machine Learning: a community case study 2,"# Machine Learning: a community case study 2
+
+A transport team predicts demand using historical trip counts. Analysts separate training records from later evaluation observations. A simple prediction baseline reveals where the model needs improvement. The pilot includes 13 observations and a short checklist for the next review.
+
+Subscribe and share this article.",train
+A005,G003,html,Personal Finance: a community case study 3,<h1>Personal Finance: a community case study 3</h1><p>Tracking expenses helps explain differences between planned and actual spending. A household builds a monthly budget from recurring expenses. The plan balances emergency savings with irregular repair costs. The pilot includes 14 observations and a short checklist for the next review.</p><footer>Subscribe and share this article.</footer>,train
+A006,G003,markdown,Personal Finance: a community case study 3,"# Personal Finance: a community case study 3
+
+Tracking expenses helps explain differences between planned and actual spending. A household builds a monthly budget from recurring expenses. The plan balances emergency savings with irregular repair costs. The pilot includes 14 observations and a short checklist for the next review.
+
+Subscribe and share this article.",train
+A007,G004,html,Nutrition: a community case study 4,<h1>Nutrition: a community case study 4</h1><p>An apple supplies texture and flavour in a simple lunch recipe. A school plans a balanced meal with vegetables and fresh fruit. Staff compare nutrition needs with seasonal ingredient availability. The pilot includes 15 observations and a short checklist for the next review.</p><footer>Subscribe and share this article.</footer>,train
+A008,G004,markdown,Nutrition: a community case study 4,"# Nutrition: a community case study 4
+
+Staff compare nutrition needs with seasonal ingredient availability. A school plans a balanced meal with vegetables and fresh fruit. An apple supplies texture and flavour in a simple lunch recipe. The pilot includes 15 observations and a short checklist for the next review.
+
+Subscribe and share this article.",train
+A009,G005,html,Web Development: a community case study 5,<h1>Web Development: a community case study 5</h1><p>The React.js interface displays useful messages when a request fails. A volunteer team builds an accessible browser interface with ReactJS. Developers test keyboard navigation and form validation. The pilot includes 16 observations and a short checklist for the next review. A repair club compares Apple devices by battery life and repairability.</p><footer>Subscribe and share this article.</footer>,train
+A010,G005,markdown,Web Development: a community case study 5,"# Web Development: a community case study 5
+
+A volunteer team builds an accessible browser interface with ReactJS. Developers test keyboard navigation and form validation. The React.js interface displays useful messages when a request fails. The pilot includes 16 observations and a short checklist for the next review. A repair club compares Apple devices by battery life and repairability.
+
+Subscribe and share this article.",train
+A011,G006,html,Consumer Devices: a community case study 6,<h1>Consumer Devices: a community case study 6</h1><p>The group tests a laptop and documents everyday charging behaviour. Its report separates manufacturer claims from measured device results. A repair club compares Apple devices by battery life and repairability. The pilot includes 17 observations and a short checklist for the next review.</p><footer>Subscribe and share this article.</footer>,train
+A012,G006,markdown,Consumer Devices: a community case study 6,"# Consumer Devices: a community case study 6
+
+Its report separates manufacturer claims from measured device results. The group tests a laptop and documents everyday charging behaviour. A repair club compares Apple devices by battery life and repairability. The pilot includes 17 observations and a short checklist for the next review.
+
+Subscribe and share this article.",train
+A013,G007,html,Cloud Computing: a community case study 7,<h1>Cloud Computing: a community case study 7</h1><p>Engineers compare backup recovery with monthly hosting costs. The team measures deployment time and documents a rollback plan. A small shop moves its inventory service to a hosted server. The pilot includes 18 observations and a short checklist for the next review.</p><footer>Subscribe and share this article.</footer>,train
+A014,G007,markdown,Cloud Computing: a community case study 7,"# Cloud Computing: a community case study 7
+
+The team measures deployment time and documents a rollback plan. Engineers compare backup recovery with monthly hosting costs. A small shop moves its inventory service to a hosted server. The pilot includes 18 observations and a short checklist for the next review.
+
+Subscribe and share this article.",train
+A015,G008,html,Machine Learning: a community case study 8,<h1>Machine Learning: a community case study 8</h1><p>A transport team predicts demand using historical trip counts. Analysts separate training records from later evaluation observations. A simple prediction baseline reveals where the model needs improvement. The pilot includes 19 observations and a short checklist for the next review.</p><footer>Subscribe and share this article.</footer>,train
+A016,G008,markdown,Machine Learning: a community case study 8,"# Machine Learning: a community case study 8
+
+A transport team predicts demand using historical trip counts. A simple prediction baseline reveals where the model needs improvement. Analysts separate training records from later evaluation observations. The pilot includes 19 observations and a short checklist for the next review.
+
+Subscribe and share this article.",train
+A017,G009,html,Personal Finance: a community case study 9,<h1>Personal Finance: a community case study 9</h1><p>The plan balances emergency savings with irregular repair costs. A household builds a monthly budget from recurring expenses. Tracking expenses helps explain differences between planned and actual spending. The pilot includes 20 observations and a short checklist for the next review. A school plans a balanced meal with vegetables and fresh fruit.</p><footer>Subscribe and share this article.</footer>,train
+A018,G009,markdown,Personal Finance: a community case study 9,"# Personal Finance: a community case study 9
+
+The plan balances emergency savings with irregular repair costs. A household builds a monthly budget from recurring expenses. Tracking expenses helps explain differences between planned and actual spending. The pilot includes 20 observations and a short checklist for the next review. A school plans a balanced meal with vegetables and fresh fruit.
+
+Subscribe and share this article.",train
+A019,G010,html,Nutrition: a community case study 10,<h1>Nutrition: a community case study 10</h1><p>An apple supplies texture and flavour in a simple lunch recipe. A school plans a balanced meal with vegetables and fresh fruit. Staff compare nutrition needs with seasonal ingredient availability. The pilot includes 21 observations and a short checklist for the next review.</p><footer>Subscribe and share this article.</footer>,train
+A020,G010,markdown,Nutrition: a community case study 10,"# Nutrition: a community case study 10
+
+An apple supplies texture and flavour in a simple lunch recipe. A school plans a balanced meal with vegetables and fresh fruit. Staff compare nutrition needs with seasonal ingredient availability. The pilot includes 21 observations and a short checklist for the next review.
+
+Subscribe and share this article.",train
+A021,G011,html,Web Development: a community case study 11,<h1>Web Development: a community case study 11</h1><p>Developers test keyboard navigation and form validation. A volunteer team builds an accessible browser interface with ReactJS. The React.js interface displays useful messages when a request fails. The pilot includes 22 observations and a short checklist for the next review.</p><footer>Subscribe and share this article.</footer>,train
+A022,G011,markdown,Web Development: a community case study 11,"# Web Development: a community case study 11
+
+Developers test keyboard navigation and form validation. A volunteer team builds an accessible browser interface with ReactJS. The React.js interface displays useful messages when a request fails. The pilot includes 22 observations and a short checklist for the next review.
+
+Subscribe and share this article.",train
+A023,G012,html,Consumer Devices: a community case study 12,<h1>Consumer Devices: a community case study 12</h1><p>A repair club compares Apple devices by battery life and repairability. Its report separates manufacturer claims from measured device results. The group tests a laptop and documents everyday charging behaviour. The pilot includes 23 observations and a short checklist for the next review.</p><footer>Subscribe and share this article.</footer>,train
+A024,G012,markdown,Consumer Devices: a community case study 12,"# Consumer Devices: a community case study 12
+
+The group tests a laptop and documents everyday charging behaviour. A repair club compares Apple devices by battery life and repairability. Its report separates manufacturer claims from measured device results. The pilot includes 23 observations and a short checklist for the next review.
+
+Subscribe and share this article.",train
+A025,G013,html,Cloud Computing: a practical review 1,<h1>Cloud Computing: a practical review 1</h1><p>Engineers compare backup recovery with monthly hosting costs. A small shop moves its inventory service to a hosted server. The team measures deployment time and documents a rollback plan. The pilot includes 24 observations and a short checklist for the next review. A transport team predicts demand using historical trip counts.</p><footer>Subscribe and share this article.</footer>,train
+A026,G013,markdown,Cloud Computing: a practical review 1,"# Cloud Computing: a practical review 1
+
+The team measures deployment time and documents a rollback plan. Engineers compare backup recovery with monthly hosting costs. A small shop moves its inventory service to a hosted server. The pilot includes 24 observations and a short checklist for the next review. A transport team predicts demand using historical trip counts.
+
+Subscribe and share this article.",train
+A027,G014,html,Machine Learning: a practical review 2,<h1>Machine Learning: a practical review 2</h1><p>A simple prediction baseline reveals where the model needs improvement. Analysts separate training records from later evaluation observations. A transport team predicts demand using historical trip counts. The pilot includes 25 observations and a short checklist for the next review.</p><footer>Subscribe and share this article.</footer>,train
+A028,G014,markdown,Machine Learning: a practical review 2,"# Machine Learning: a practical review 2
+
+A simple prediction baseline reveals where the model needs improvement. Analysts separate training records from later evaluation observations. A transport team predicts demand using historical trip counts. The pilot includes 25 observations and a short checklist for the next review.
+
+Subscribe and share this article.",train
+A029,G015,html,Personal Finance: a practical review 3,<h1>Personal Finance: a practical review 3</h1><p>A household builds a monthly budget from recurring expenses. The plan balances emergency savings with irregular repair costs. Tracking expenses helps explain differences between planned and actual spending. The pilot includes 26 observations and a short checklist for the next review.</p><footer>Subscribe and share this article.</footer>,train
+A030,G015,markdown,Personal Finance: a practical review 3,"# Personal Finance: a practical review 3
+
+A household builds a monthly budget from recurring expenses. The plan balances emergency savings with irregular repair costs. Tracking expenses helps explain differences between planned and actual spending. The pilot includes 26 observations and a short checklist for the next review.
+
+Subscribe and share this article.",train
+A031,G016,html,Nutrition: a practical review 4,<h1>Nutrition: a practical review 4</h1><p>A school plans a balanced meal with vegetables and fresh fruit. An apple supplies texture and flavour in a simple lunch recipe. Staff compare nutrition needs with seasonal ingredient availability. The pilot includes 27 observations and a short checklist for the next review.</p><footer>Subscribe and share this article.</footer>,train
+A032,G016,markdown,Nutrition: a practical review 4,"# Nutrition: a practical review 4
+
+A school plans a balanced meal with vegetables and fresh fruit. An apple supplies texture and flavour in a simple lunch recipe. Staff compare nutrition needs with seasonal ingredient availability. The pilot includes 27 observations and a short checklist for the next review.
+
+Subscribe and share this article.",train
+A033,G017,html,Web Development: a practical review 5,<h1>Web Development: a practical review 5</h1><p>The React.js interface displays useful messages when a request fails. A volunteer team builds an accessible browser interface with ReactJS. Developers test keyboard navigation and form validation. The pilot includes 28 observations and a short checklist for the next review. A repair club compares Apple devices by battery life and repairability.</p><footer>Subscribe and share this article.</footer>,train
+A034,G017,markdown,Web Development: a practical review 5,"# Web Development: a practical review 5
+
+Developers test keyboard navigation and form validation. A volunteer team builds an accessible browser interface with ReactJS. The React.js interface displays useful messages when a request fails. The pilot includes 28 observations and a short checklist for the next review. A repair club compares Apple devices by battery life and repairability.
+
+Subscribe and share this article.",train
+A035,G018,html,Consumer Devices: a practical review 6,<h1>Consumer Devices: a practical review 6</h1><p>A repair club compares Apple devices by battery life and repairability. The group tests a laptop and documents everyday charging behaviour. Its report separates manufacturer claims from measured device results. The pilot includes 29 observations and a short checklist for the next review.</p><footer>Subscribe and share this article.</footer>,train
+A036,G018,markdown,Consumer Devices: a practical review 6,"# Consumer Devices: a practical review 6
+
+Its report separates manufacturer claims from measured device results. The group tests a laptop and documents everyday charging behaviour. A repair club compares Apple devices by battery life and repairability. The pilot includes 29 observations and a short checklist for the next review.
+
+Subscribe and share this article.",train
+A037,G019,html,Cloud Computing: a practical review 7,<h1>Cloud Computing: a practical review 7</h1><p>Engineers compare backup recovery with monthly hosting costs. A small shop moves its inventory service to a hosted server. The team measures deployment time and documents a rollback plan. The pilot includes 30 observations and a short checklist for the next review.</p><footer>Subscribe and share this article.</footer>,train
+A038,G019,markdown,Cloud Computing: a practical review 7,"# Cloud Computing: a practical review 7
+
+Engineers compare backup recovery with monthly hosting costs. The team measures deployment time and documents a rollback plan. A small shop moves its inventory service to a hosted server. The pilot includes 30 observations and a short checklist for the next review.
+
+Subscribe and share this article.",train
+A039,G020,html,Machine Learning: a practical review 8,<h1>Machine Learning: a practical review 8</h1><p>A simple prediction baseline reveals where the model needs improvement. Analysts separate training records from later evaluation observations. A transport team predicts demand using historical trip counts. The pilot includes 31 observations and a short checklist for the next review.</p><footer>Subscribe and share this article.</footer>,train
+A040,G020,markdown,Machine Learning: a practical review 8,"# Machine Learning: a practical review 8
+
+A simple prediction baseline reveals where the model needs improvement. Analysts separate training records from later evaluation observations. A transport team predicts demand using historical trip counts. The pilot includes 31 observations and a short checklist for the next review.
+
+Subscribe and share this article.",train
+A041,G021,html,Personal Finance: a practical review 9,<h1>Personal Finance: a practical review 9</h1><p>A household builds a monthly budget from recurring expenses. Tracking expenses helps explain differences between planned and actual spending. The plan balances emergency savings with irregular repair costs. The pilot includes 32 observations and a short checklist for the next review. A school plans a balanced meal with vegetables and fresh fruit.</p><footer>Subscribe and share this article.</footer>,train
+A042,G021,markdown,Personal Finance: a practical review 9,"# Personal Finance: a practical review 9
+
+Tracking expenses helps explain differences between planned and actual spending. The plan balances emergency savings with irregular repair costs. A household builds a monthly budget from recurring expenses. The pilot includes 32 observations and a short checklist for the next review. A school plans a balanced meal with vegetables and fresh fruit.
+
+Subscribe and share this article.",train
+A043,G022,html,Nutrition: a practical review 10,<h1>Nutrition: a practical review 10</h1><p>Staff compare nutrition needs with seasonal ingredient availability. An apple supplies texture and flavour in a simple lunch recipe. A school plans a balanced meal with vegetables and fresh fruit. The pilot includes 33 observations and a short checklist for the next review.</p><footer>Subscribe and share this article.</footer>,train
+A044,G022,markdown,Nutrition: a practical review 10,"# Nutrition: a practical review 10
+
+Staff compare nutrition needs with seasonal ingredient availability. An apple supplies texture and flavour in a simple lunch recipe. A school plans a balanced meal with vegetables and fresh fruit. The pilot includes 33 observations and a short checklist for the next review.
+
+Subscribe and share this article.",train
+A045,G023,html,Web Development: a practical review 11,<h1>Web Development: a practical review 11</h1><p>A volunteer team builds an accessible browser interface with ReactJS. Developers test keyboard navigation and form validation. The React.js interface displays useful messages when a request fails. The pilot includes 34 observations and a short checklist for the next review.</p><footer>Subscribe and share this article.</footer>,train
+A046,G023,markdown,Web Development: a practical review 11,"# Web Development: a practical review 11
+
+The React.js interface displays useful messages when a request fails. Developers test keyboard navigation and form validation. A volunteer team builds an accessible browser interface with ReactJS. The pilot includes 34 observations and a short checklist for the next review.
+
+Subscribe and share this article.",train
+A047,G024,html,Consumer Devices: a practical review 12,<h1>Consumer Devices: a practical review 12</h1><p>Its report separates manufacturer claims from measured device results. A repair club compares Apple devices by battery life and repairability. The group tests a laptop and documents everyday charging behaviour. The pilot includes 35 observations and a short checklist for the next review.</p><footer>Subscribe and share this article.</footer>,train
+A048,G024,markdown,Consumer Devices: a practical review 12,"# Consumer Devices: a practical review 12
+
+Its report separates manufacturer claims from measured device results. A repair club compares Apple devices by battery life and repairability. The group tests a laptop and documents everyday charging behaviour. The pilot includes 35 observations and a short checklist for the next review.
+
+Subscribe and share this article.",train
+A049,G025,html,Cloud Computing: decisions and tradeoffs 1,<h1>Cloud Computing: decisions and tradeoffs 1</h1><p>A small shop moves its inventory service to a hosted server. Engineers compare backup recovery with monthly hosting costs. The team measures deployment time and documents a rollback plan. The pilot includes 36 observations and a short checklist for the next review. A transport team predicts demand using historical trip counts.</p><footer>Subscribe and share this article.</footer>,validation
+A050,G025,markdown,Cloud Computing: decisions and tradeoffs 1,"# Cloud Computing: decisions and tradeoffs 1
+
+Engineers compare backup recovery with monthly hosting costs. A small shop moves its inventory service to a hosted server. The team measures deployment time and documents a rollback plan. The pilot includes 36 observations and a short checklist for the next review. A transport team predicts demand using historical trip counts.
+
+Subscribe and share this article.",validation
+A051,G026,html,Machine Learning: decisions and tradeoffs 2,<h1>Machine Learning: decisions and tradeoffs 2</h1><p>A simple prediction baseline reveals where the model needs improvement. Analysts separate training records from later evaluation observations. A transport team predicts demand using historical trip counts. The pilot includes 37 observations and a short checklist for the next review.</p><footer>Subscribe and share this article.</footer>,validation
+A052,G026,markdown,Machine Learning: decisions and tradeoffs 2,"# Machine Learning: decisions and tradeoffs 2
+
+A simple prediction baseline reveals where the model needs improvement. A transport team predicts demand using historical trip counts. Analysts separate training records from later evaluation observations. The pilot includes 37 observations and a short checklist for the next review.
+
+Subscribe and share this article.",validation
+A053,G027,html,Personal Finance: decisions and tradeoffs 3,<h1>Personal Finance: decisions and tradeoffs 3</h1><p>Tracking expenses helps explain differences between planned and actual spending. The plan balances emergency savings with irregular repair costs. A household builds a monthly budget from recurring expenses. The pilot includes 38 observations and a short checklist for the next review.</p><footer>Subscribe and share this article.</footer>,validation
+A054,G027,markdown,Personal Finance: decisions and tradeoffs 3,"# Personal Finance: decisions and tradeoffs 3
+
+A household builds a monthly budget from recurring expenses. Tracking expenses helps explain differences between planned and actual spending. The plan balances emergency savings with irregular repair costs. The pilot includes 38 observations and a short checklist for the next review.
+
+Subscribe and share this article.",validation
+A055,G028,html,Nutrition: decisions and tradeoffs 4,<h1>Nutrition: decisions and tradeoffs 4</h1><p>Staff compare nutrition needs with seasonal ingredient availability. An apple supplies texture and flavour in a simple lunch recipe. A school plans a balanced meal with vegetables and fresh fruit. The pilot includes 39 observations and a short checklist for the next review.</p><footer>Subscribe and share this article.</footer>,validation
+A056,G028,markdown,Nutrition: decisions and tradeoffs 4,"# Nutrition: decisions and tradeoffs 4
+
+An apple supplies texture and flavour in a simple lunch recipe. Staff compare nutrition needs with seasonal ingredient availability. A school plans a balanced meal with vegetables and fresh fruit. The pilot includes 39 observations and a short checklist for the next review.
+
+Subscribe and share this article.",validation
+A057,G029,html,Web Development: decisions and tradeoffs 5,<h1>Web Development: decisions and tradeoffs 5</h1><p>The React.js interface displays useful messages when a request fails. Developers test keyboard navigation and form validation. A volunteer team builds an accessible browser interface with ReactJS. The pilot includes 40 observations and a short checklist for the next review. A repair club compares Apple devices by battery life and repairability.</p><footer>Subscribe and share this article.</footer>,validation
+A058,G029,markdown,Web Development: decisions and tradeoffs 5,"# Web Development: decisions and tradeoffs 5
+
+Developers test keyboard navigation and form validation. The React.js interface displays useful messages when a request fails. A volunteer team builds an accessible browser interface with ReactJS. The pilot includes 40 observations and a short checklist for the next review. A repair club compares Apple devices by battery life and repairability.
+
+Subscribe and share this article.",validation
+A059,G030,html,Consumer Devices: decisions and tradeoffs 6,<h1>Consumer Devices: decisions and tradeoffs 6</h1><p>A repair club compares Apple devices by battery life and repairability. The group tests a laptop and documents everyday charging behaviour. Its report separates manufacturer claims from measured device results. The pilot includes 41 observations and a short checklist for the next review.</p><footer>Subscribe and share this article.</footer>,validation
+A060,G030,markdown,Consumer Devices: decisions and tradeoffs 6,"# Consumer Devices: decisions and tradeoffs 6
+
+A repair club compares Apple devices by battery life and repairability. The group tests a laptop and documents everyday charging behaviour. Its report separates manufacturer claims from measured device results. The pilot includes 41 observations and a short checklist for the next review.
+
+Subscribe and share this article.",validation
+A061,G031,html,Cloud Computing: decisions and tradeoffs 7,<h1>Cloud Computing: decisions and tradeoffs 7</h1><p>The team measures deployment time and documents a rollback plan. Engineers compare backup recovery with monthly hosting costs. A small shop moves its inventory service to a hosted server. The pilot includes 42 observations and a short checklist for the next review.</p><footer>Subscribe and share this article.</footer>,validation
+A062,G031,markdown,Cloud Computing: decisions and tradeoffs 7,"# Cloud Computing: decisions and tradeoffs 7
+
+A small shop moves its inventory service to a hosted server. Engineers compare backup recovery with monthly hosting costs. The team measures deployment time and documents a rollback plan. The pilot includes 42 observations and a short checklist for the next review.
+
+Subscribe and share this article.",validation
+A063,G032,html,Machine Learning: decisions and tradeoffs 8,<h1>Machine Learning: decisions and tradeoffs 8</h1><p>Analysts separate training records from later evaluation observations. A transport team predicts demand using historical trip counts. A simple prediction baseline reveals where the model needs improvement. The pilot includes 43 observations and a short checklist for the next review.</p><footer>Subscribe and share this article.</footer>,validation
+A064,G032,markdown,Machine Learning: decisions and tradeoffs 8,"# Machine Learning: decisions and tradeoffs 8
+
+A transport team predicts demand using historical trip counts. Analysts separate training records from later evaluation observations. A simple prediction baseline reveals where the model needs improvement. The pilot includes 43 observations and a short checklist for the next review.
+
+Subscribe and share this article.",validation
+A065,G033,html,Personal Finance: decisions and tradeoffs 9,<h1>Personal Finance: decisions and tradeoffs 9</h1><p>Tracking expenses helps explain differences between planned and actual spending. A household builds a monthly budget from recurring expenses. The plan balances emergency savings with irregular repair costs. The pilot includes 44 observations and a short checklist for the next review. A school plans a balanced meal with vegetables and fresh fruit.</p><footer>Subscribe and share this article.</footer>,validation
+A066,G033,markdown,Personal Finance: decisions and tradeoffs 9,"# Personal Finance: decisions and tradeoffs 9
+
+The plan balances emergency savings with irregular repair costs. A household builds a monthly budget from recurring expenses. Tracking expenses helps explain differences between planned and actual spending. The pilot includes 44 observations and a short checklist for the next review. A school plans a balanced meal with vegetables and fresh fruit.
+
+Subscribe and share this article.",validation
+A067,G034,html,Nutrition: decisions and tradeoffs 10,<h1>Nutrition: decisions and tradeoffs 10</h1><p>Staff compare nutrition needs with seasonal ingredient availability. An apple supplies texture and flavour in a simple lunch recipe. A school plans a balanced meal with vegetables and fresh fruit. The pilot includes 45 observations and a short checklist for the next review.</p><footer>Subscribe and share this article.</footer>,validation
+A068,G034,markdown,Nutrition: decisions and tradeoffs 10,"# Nutrition: decisions and tradeoffs 10
+
+Staff compare nutrition needs with seasonal ingredient availability. An apple supplies texture and flavour in a simple lunch recipe. A school plans a balanced meal with vegetables and fresh fruit. The pilot includes 45 observations and a short checklist for the next review.
+
+Subscribe and share this article.",validation
+A069,G035,html,Web Development: decisions and tradeoffs 11,<h1>Web Development: decisions and tradeoffs 11</h1><p>Developers test keyboard navigation and form validation. A volunteer team builds an accessible browser interface with ReactJS. The React.js interface displays useful messages when a request fails. The pilot includes 46 observations and a short checklist for the next review.</p><footer>Subscribe and share this article.</footer>,validation
+A070,G035,markdown,Web Development: decisions and tradeoffs 11,"# Web Development: decisions and tradeoffs 11
+
+The React.js interface displays useful messages when a request fails. Developers test keyboard navigation and form validation. A volunteer team builds an accessible browser interface with ReactJS. The pilot includes 46 observations and a short checklist for the next review.
+
+Subscribe and share this article.",validation
+A071,G036,html,Consumer Devices: decisions and tradeoffs 12,<h1>Consumer Devices: decisions and tradeoffs 12</h1><p>The group tests a laptop and documents everyday charging behaviour. Its report separates manufacturer claims from measured device results. A repair club compares Apple devices by battery life and repairability. The pilot includes 47 observations and a short checklist for the next review.</p><footer>Subscribe and share this article.</footer>,validation
+A072,G036,markdown,Consumer Devices: decisions and tradeoffs 12,"# Consumer Devices: decisions and tradeoffs 12
+
+A repair club compares Apple devices by battery life and repairability. Its report separates manufacturer claims from measured device results. The group tests a laptop and documents everyday charging behaviour. The pilot includes 47 observations and a short checklist for the next review.
+
+Subscribe and share this article.",validation
+A073,G037,html,Cloud Computing: lessons from a pilot 1,<h1>Cloud Computing: lessons from a pilot 1</h1><p>A small shop moves its inventory service to a hosted server. The team measures deployment time and documents a rollback plan. Engineers compare backup recovery with monthly hosting costs. The pilot includes 48 observations and a short checklist for the next review. A transport team predicts demand using historical trip counts.</p><footer>Subscribe and share this article.</footer>,test
+A074,G037,markdown,Cloud Computing: lessons from a pilot 1,"# Cloud Computing: lessons from a pilot 1
+
+The team measures deployment time and documents a rollback plan. Engineers compare backup recovery with monthly hosting costs. A small shop moves its inventory service to a hosted server. The pilot includes 48 observations and a short checklist for the next review. A transport team predicts demand using historical trip counts.
+
+Subscribe and share this article.",test
+A075,G038,html,Machine Learning: lessons from a pilot 2,<h1>Machine Learning: lessons from a pilot 2</h1><p>A simple prediction baseline reveals where the model needs improvement. A transport team predicts demand using historical trip counts. Analysts separate training records from later evaluation observations. The pilot includes 49 observations and a short checklist for the next review.</p><footer>Subscribe and share this article.</footer>,test
+A076,G038,markdown,Machine Learning: lessons from a pilot 2,"# Machine Learning: lessons from a pilot 2
+
+A simple prediction baseline reveals where the model needs improvement. A transport team predicts demand using historical trip counts. Analysts separate training records from later evaluation observations. The pilot includes 49 observations and a short checklist for the next review.
+
+Subscribe and share this article.",test
+A077,G039,html,Personal Finance: lessons from a pilot 3,<h1>Personal Finance: lessons from a pilot 3</h1><p>A household builds a monthly budget from recurring expenses. Tracking expenses helps explain differences between planned and actual spending. The plan balances emergency savings with irregular repair costs. The pilot includes 50 observations and a short checklist for the next review.</p><footer>Subscribe and share this article.</footer>,test
+A078,G039,markdown,Personal Finance: lessons from a pilot 3,"# Personal Finance: lessons from a pilot 3
+
+The plan balances emergency savings with irregular repair costs. A household builds a monthly budget from recurring expenses. Tracking expenses helps explain differences between planned and actual spending. The pilot includes 50 observations and a short checklist for the next review.
+
+Subscribe and share this article.",test
+A079,G040,html,Nutrition: lessons from a pilot 4,<h1>Nutrition: lessons from a pilot 4</h1><p>Staff compare nutrition needs with seasonal ingredient availability. An apple supplies texture and flavour in a simple lunch recipe. A school plans a balanced meal with vegetables and fresh fruit. The pilot includes 51 observations and a short checklist for the next review.</p><footer>Subscribe and share this article.</footer>,test
+A080,G040,markdown,Nutrition: lessons from a pilot 4,"# Nutrition: lessons from a pilot 4
+
+A school plans a balanced meal with vegetables and fresh fruit. An apple supplies texture and flavour in a simple lunch recipe. Staff compare nutrition needs with seasonal ingredient availability. The pilot includes 51 observations and a short checklist for the next review.
+
+Subscribe and share this article.",test
+A081,G041,html,Web Development: lessons from a pilot 5,<h1>Web Development: lessons from a pilot 5</h1><p>The React.js interface displays useful messages when a request fails. Developers test keyboard navigation and form validation. A volunteer team builds an accessible browser interface with ReactJS. The pilot includes 52 observations and a short checklist for the next review. A repair club compares Apple devices by battery life and repairability.</p><footer>Subscribe and share this article.</footer>,test
+A082,G041,markdown,Web Development: lessons from a pilot 5,"# Web Development: lessons from a pilot 5
+
+Developers test keyboard navigation and form validation. A volunteer team builds an accessible browser interface with ReactJS. The React.js interface displays useful messages when a request fails. The pilot includes 52 observations and a short checklist for the next review. A repair club compares Apple devices by battery life and repairability.
+
+Subscribe and share this article.",test
+A083,G042,html,Consumer Devices: lessons from a pilot 6,<h1>Consumer Devices: lessons from a pilot 6</h1><p>A repair club compares Apple devices by battery life and repairability. Its report separates manufacturer claims from measured device results. The group tests a laptop and documents everyday charging behaviour. The pilot includes 53 observations and a short checklist for the next review.</p><footer>Subscribe and share this article.</footer>,test
+A084,G042,markdown,Consumer Devices: lessons from a pilot 6,"# Consumer Devices: lessons from a pilot 6
+
+Its report separates manufacturer claims from measured device results. The group tests a laptop and documents everyday charging behaviour. A repair club compares Apple devices by battery life and repairability. The pilot includes 53 observations and a short checklist for the next review.
+
+Subscribe and share this article.",test
+A085,G043,html,Cloud Computing: lessons from a pilot 7,<h1>Cloud Computing: lessons from a pilot 7</h1><p>Engineers compare backup recovery with monthly hosting costs. A small shop moves its inventory service to a hosted server. The team measures deployment time and documents a rollback plan. The pilot includes 54 observations and a short checklist for the next review.</p><footer>Subscribe and share this article.</footer>,test
+A086,G043,markdown,Cloud Computing: lessons from a pilot 7,"# Cloud Computing: lessons from a pilot 7
+
+A small shop moves its inventory service to a hosted server. The team measures deployment time and documents a rollback plan. Engineers compare backup recovery with monthly hosting costs. The pilot includes 54 observations and a short checklist for the next review.
+
+Subscribe and share this article.",test
+A087,G044,html,Machine Learning: lessons from a pilot 8,<h1>Machine Learning: lessons from a pilot 8</h1><p>A simple prediction baseline reveals where the model needs improvement. A transport team predicts demand using historical trip counts. Analysts separate training records from later evaluation observations. The pilot includes 55 observations and a short checklist for the next review.</p><footer>Subscribe and share this article.</footer>,test
+A088,G044,markdown,Machine Learning: lessons from a pilot 8,"# Machine Learning: lessons from a pilot 8
+
+A transport team predicts demand using historical trip counts. Analysts separate training records from later evaluation observations. A simple prediction baseline reveals where the model needs improvement. The pilot includes 55 observations and a short checklist for the next review.
+
+Subscribe and share this article.",test
+A089,G045,html,Personal Finance: lessons from a pilot 9,<h1>Personal Finance: lessons from a pilot 9</h1><p>A household builds a monthly budget from recurring expenses. The plan balances emergency savings with irregular repair costs. Tracking expenses helps explain differences between planned and actual spending. The pilot includes 56 observations and a short checklist for the next review. A school plans a balanced meal with vegetables and fresh fruit.</p><footer>Subscribe and share this article.</footer>,test
+A090,G045,markdown,Personal Finance: lessons from a pilot 9,"# Personal Finance: lessons from a pilot 9
+
+The plan balances emergency savings with irregular repair costs. A household builds a monthly budget from recurring expenses. Tracking expenses helps explain differences between planned and actual spending. The pilot includes 56 observations and a short checklist for the next review. A school plans a balanced meal with vegetables and fresh fruit.
+
+Subscribe and share this article.",test
+A091,G046,html,Nutrition: lessons from a pilot 10,<h1>Nutrition: lessons from a pilot 10</h1><p>A school plans a balanced meal with vegetables and fresh fruit. An apple supplies texture and flavour in a simple lunch recipe. Staff compare nutrition needs with seasonal ingredient availability. The pilot includes 57 observations and a short checklist for the next review.</p><footer>Subscribe and share this article.</footer>,test
+A092,G046,markdown,Nutrition: lessons from a pilot 10,"# Nutrition: lessons from a pilot 10
+
+Staff compare nutrition needs with seasonal ingredient availability. An apple supplies texture and flavour in a simple lunch recipe. A school plans a balanced meal with vegetables and fresh fruit. The pilot includes 57 observations and a short checklist for the next review.
+
+Subscribe and share this article.",test
+A093,G047,html,Web Development: lessons from a pilot 11,<h1>Web Development: lessons from a pilot 11</h1><p>Developers test keyboard navigation and form validation. The React.js interface displays useful messages when a request fails. A volunteer team builds an accessible browser interface with ReactJS. The pilot includes 58 observations and a short checklist for the next review.</p><footer>Subscribe and share this article.</footer>,test
+A094,G047,markdown,Web Development: lessons from a pilot 11,"# Web Development: lessons from a pilot 11
+
+Developers test keyboard navigation and form validation. A volunteer team builds an accessible browser interface with ReactJS. The React.js interface displays useful messages when a request fails. The pilot includes 58 observations and a short checklist for the next review.
+
+Subscribe and share this article.",test
+A095,G048,html,Consumer Devices: lessons from a pilot 12,<h1>Consumer Devices: lessons from a pilot 12</h1><p>Its report separates manufacturer claims from measured device results. The group tests a laptop and documents everyday charging behaviour. A repair club compares Apple devices by battery life and repairability. The pilot includes 59 observations and a short checklist for the next review.</p><footer>Subscribe and share this article.</footer>,test
+A096,G048,markdown,Consumer Devices: lessons from a pilot 12,"# Consumer Devices: lessons from a pilot 12
+
+Its report separates manufacturer claims from measured device results. A repair club compares Apple devices by battery life and repairability. The group tests a laptop and documents everyday charging behaviour. The pilot includes 59 observations and a short checklist for the next review.
+
+Subscribe and share this article.",test

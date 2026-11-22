@@ -1,0 +1,7 @@
+category_id,parent_category,category,canonical_tags
+cloud,Technology,Cloud Computing,cloud|deployment|server
+ml,Technology,Machine Learning,model|training|prediction
+finance,Business,Personal Finance,budget|savings|expenses
+nutrition,Lifestyle,Nutrition,fruit|meal|nutrition
+web,Technology,Web Development,react|browser|interface
+devices,Technology,Consumer Devices,apple|device|battery

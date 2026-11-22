@@ -1,84 +1,69 @@
-"""End-to-end training, validation threshold tuning, and testing pipeline."""
+"""Master training, validation threshold tuning, and testing pipeline using official dataset."""
 
+import csv
 import json
+import time
 from pathlib import Path
+import numpy as np
 import pandas as pd
+from sklearn.metrics import f1_score, precision_score, recall_score
 
 from src.taxonomy import TaxonomyManager
-from src.preprocess import clean_article, split_dataset_temporal
-from src.generate_dataset import generate_synthetic_blog_corpus
+from src.preprocess import clean_article
 from src.engine import TaggingEngine
-from src.evaluate import evaluate_model_on_dataset, analyze_threshold_curve
+
+
+def calculate_precision_recall_at_k(y_true_list, y_pred_list, k=3):
+    p_list = []
+    r_list = []
+    for true_tags, pred_tags in zip(y_true_list, y_pred_list):
+        if not true_tags:
+            continue
+        top_k = pred_tags[:k]
+        hits = len(set(true_tags) & set(top_k))
+        # denominator is defined as max(1, len(top_k))
+        p = hits / max(1, len(top_k))
+        r = hits / max(1, len(true_tags))
+        p_list.append(p)
+        r_list.append(r)
+    return float(np.mean(p_list) if p_list else 0.0), float(np.mean(r_list) if r_list else 0.0)
 
 
 def run_pipeline():
     print("=" * 60)
-    print("1. Loading Taxonomy and Preparing Dataset")
+    print("1. Loading Official Dataset and Taxonomy")
     print("=" * 60)
 
-    taxonomy = TaxonomyManager("data/taxonomy.json")
-    print(f"Loaded {len(taxonomy.all_approved_tags())} approved taxonomy tags.")
+    taxonomy = TaxonomyManager("data")
+    print(f"Loaded {len(taxonomy.all_categories())} categories, {len(taxonomy.all_approved_tags())} canonical tags.")
 
-    # 1. Dataset generation if not present
-    posts_path = Path("data/blog_posts.json")
-    if not posts_path.exists():
-        generate_synthetic_blog_corpus(str(posts_path))
+    articles_path = "data/articles.csv"
+    labels_path = "data/labels.csv"
 
-    with open(posts_path, "r", encoding="utf-8") as f:
-        posts = json.load(f)
+    with open(articles_path, "r", encoding="utf-8") as f:
+        articles = list(csv.DictReader(f))
+    with open(labels_path, "r", encoding="utf-8") as f:
+        labels_map = {r["article_id"]: r for r in csv.DictReader(f)}
 
-    # Preprocess all posts
-    cleaned_records = []
-    for p in posts:
-        cleaned = clean_article(p["title"], p["body"])
-        cleaned_records.append({
-            "id": p["id"],
-            "title": p["title"],
-            "body": p["body"],
-            "cleaned_title": cleaned["cleaned_title"],
-            "cleaned_body": cleaned["cleaned_body"],
-            "combined_text": cleaned["combined_text"],
-            "word_count": cleaned["word_count"],
-            "tags": p["tags"],
-            "published_date": p["published_date"],
-            "author": p["author"]
-        })
+    train_arts = [a for a in articles if a["split"] == "train"]
+    val_arts = [a for a in articles if a["split"] == "validation"]
+    test_arts = [a for a in articles if a["split"] == "test"]
 
-    df = pd.DataFrame(cleaned_records)
-
-    # Temporal split
-    train_df, val_df, test_df = split_dataset_temporal(df, date_col="published_date", train_ratio=0.70, val_ratio=0.15)
-    print(f"Dataset split: Train={len(train_df)}, Val={len(val_df)}, Test (Unseen recent)={len(test_df)}")
-
-    # Save splits
-    Path("data").mkdir(parents=True, exist_ok=True)
-    train_df.to_json("data/train.json", orient="records", date_format="iso", indent=2)
-    val_df.to_json("data/val.json", orient="records", date_format="iso", indent=2)
-    test_df.to_json("data/test.json", orient="records", date_format="iso", indent=2)
+    print(f"Dataset split: Train={len(train_arts)}, Validation={len(val_arts)}, Test={len(test_arts)}")
 
     print("\n" + "=" * 60)
-    print("2. Training Baseline and Semantic Models")
+    print("2. Training Multi-Label TF-IDF & Semantic Models")
     print("=" * 60)
 
     engine = TaggingEngine(taxonomy)
 
-    # Train TF-IDF model
-    print("Training TF-IDF + Logistic Regression model...")
-    engine.tfidf_model.fit(
-        train_df["cleaned_title"].tolist(),
-        train_df["cleaned_body"].tolist(),
-        train_df["tags"].tolist()
-    )
+    print("Training TF-IDF Multi-label model on Train split...")
+    engine.tfidf_model.fit(articles_path, labels_path)
     engine.tfidf_model.save("models/tfidf_model.joblib")
     print("Saved TF-IDF model to models/tfidf_model.joblib")
 
-    # Train Semantic Embedding model
-    print("Training Semantic Embedding model...")
-    engine.semantic_model.fit(
-        train_df["cleaned_title"].tolist(),
-        train_df["cleaned_body"].tolist(),
-        train_df["tags"].tolist()
-    )
+    print("Training Semantic Embedding model on Train split...")
+    engine.semantic_model.fit(articles_path, labels_path)
     engine.semantic_model.save("models/semantic_model.joblib")
     print("Saved Semantic model to models/semantic_model.joblib")
 
@@ -86,76 +71,133 @@ def run_pipeline():
     print("3. Validation Set Threshold Tuning & Calibration")
     print("=" * 60)
 
-    # Sweep thresholds on validation set
-    thresholds = [0.20, 0.30, 0.35, 0.40, 0.50, 0.60]
-    tfidf_curve = analyze_threshold_curve(engine, "tfidf", val_df, thresholds)
-    semantic_curve = analyze_threshold_curve(engine, "semantic", val_df, thresholds)
+    # Grid search threshold on validation split
+    best_th = 0.35
+    best_f1 = -1.0
+    val_y_true = [labels_map[a["article_id"]]["category_ids"].split("|") for a in val_arts]
 
-    # Pick optimal threshold for TF-IDF based on balanced Micro-F1
-    best_tfidf = max(tfidf_curve, key=lambda x: x["micro_f1"])
-    optimal_threshold = best_tfidf["threshold"]
-    print(f"Optimal global threshold selected: {optimal_threshold} (Val Micro-F1: {best_tfidf['micro_f1']})")
+    for th in [0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50]:
+        val_preds = []
+        for a in val_arts:
+            p = engine.predict(a["title"], a["content"], model_name="tfidf", custom_threshold=th)
+            val_preds.append(p["category_ids"])
 
-    engine.default_threshold = optimal_threshold
+        all_cats = taxonomy.all_categories()
+        y_true_bin = [[1 if c in cats else 0 for c in all_cats] for cats in val_y_true]
+        y_pred_bin = [[1 if c in cats else 0 for c in all_cats] for cats in val_preds]
+        f1 = f1_score(y_true_bin, y_pred_bin, average="micro", zero_division=0)
+        if f1 > best_f1:
+            best_f1 = f1
+            best_th = th
+
+    print(f"Optimal validation threshold: {best_th} (Micro-F1: {best_f1:.4f})")
+    engine.default_threshold = best_th
 
     print("\n" + "=" * 60)
-    print("4. Evaluating Models on Held-out Unseen Test Posts")
+    print("4. Evaluating Models on Validation and Test Splits")
     print("=" * 60)
 
-    models_to_eval = ["keyword", "tfidf", "semantic"]
-    results = {}
+    metrics_output = {}
 
-    for m in models_to_eval:
-        res = evaluate_model_on_dataset(engine, m, test_df, threshold=optimal_threshold, k=3)
-        results[m] = res
-        print(f"\n--- {m.upper()} Model Performance ---")
-        print(f"Micro-F1:        {res['micro_f1']:.4f}")
-        print(f"Macro-F1:        {res['macro_f1']:.4f}")
-        print(f"Precision@3:     {res['precision@3']:.4f}")
-        print(f"Recall@3:        {res['recall@3']:.4f}")
-        print(f"Review Coverage: {res['review_coverage_rate'] * 100:.1f}% posts flagged for review")
-        print(f"Inference Time:  {res['avg_latency_ms']:.2f} ms/post")
+    for split_name, split_arts in [("validation", val_arts), ("test", test_arts)]:
+        y_true_cats = [labels_map[a["article_id"]]["category_ids"].split("|") for a in split_arts]
+        y_true_tags = [labels_map[a["article_id"]]["tags"].split("|") for a in split_arts]
 
-    # Generate benchmark report
-    Path("reports").mkdir(parents=True, exist_ok=True)
-    with open("reports/benchmark_results.json", "w", encoding="utf-8") as f:
-        json.dump({
-            "optimal_threshold": optimal_threshold,
-            "threshold_sweep_tfidf": tfidf_curve,
-            "threshold_sweep_semantic": semantic_curve,
-            "test_results": results
-        }, f, indent=2)
+        # Evaluate TF-IDF model
+        pred_cats = []
+        pred_tags = []
+        exact_matches = 0
+        latencies = []
 
-    # Generate Markdown report
-    report_md = f"""# Automated Content Tagging: Model Evaluation Report
+        for a in split_arts:
+            t0 = time.perf_counter()
+            res = engine.predict(a["title"], a["content"], model_name="tfidf", article_id=a["article_id"])
+            latencies.append(time.perf_counter() - t0)
 
-## Executive Summary
-This report summarizes the comparative evaluation of multi-label classification models for automated blog tagging, evaluated across held-out recent blog articles.
+            cats = res["category_ids"]
+            tags = res["tags"]
+            pred_cats.append(cats)
+            pred_tags.append(tags)
 
-### Comparative Performance Table
-| Model | Micro-F1 | Macro-F1 | Precision@3 | Recall@3 | Latency (ms) | Review Route Rate |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Keyword Matcher (Baseline)** | {results['keyword']['micro_f1']} | {results['keyword']['macro_f1']} | {results['keyword']['precision@3']} | {results['keyword']['recall@3']} | {results['keyword']['avg_latency_ms']} ms | {results['keyword']['review_coverage_rate']*100:.1f}% |
-| **TF-IDF + OneVsRest Logistic Regression** | **{results['tfidf']['micro_f1']}** | **{results['tfidf']['macro_f1']}** | **{results['tfidf']['precision@3']}** | **{results['tfidf']['recall@3']}** | **{results['tfidf']['avg_latency_ms']} ms** | **{results['tfidf']['review_coverage_rate']*100:.1f}%** |
-| **Semantic Embedding Model (Chunked)** | {results['semantic']['micro_f1']} | {results['semantic']['macro_f1']} | {results['semantic']['precision@3']} | {results['semantic']['recall@3']} | {results['semantic']['avg_latency_ms']} ms | {results['semantic']['review_coverage_rate']*100:.1f}% |
+            true_c = set(labels_map[a["article_id"]]["category_ids"].split("|"))
+            if set(cats) == true_c:
+                exact_matches += 1
 
-## Validation Threshold Calibration
-The threshold sweep on validation posts demonstrated the trade-off between editorial review workload and suggestion precision:
-- **Low Thresholds (0.20):** High recall, but increased false positive suggestions.
-- **High Thresholds (0.60):** Near-zero false positives, but > 50% of posts flagged for manual editorial review.
-- **Calibrated Threshold ({optimal_threshold}):** Balances automated tagging coverage while ensuring high Precision@3.
+        all_cats = taxonomy.all_categories()
+        Y_true_bin = np.array([[1 if c in cats else 0 for c in all_cats] for cats in y_true_cats])
+        Y_pred_bin = np.array([[1 if c in cats else 0 for c in all_cats] for cats in pred_cats])
 
-## Review Routing & Edge Cases
-- **Short & Empty Drafts:** Articles under 25 words were successfully intercepted by the routing engine and flagged with `flagged_short_draft`.
-- **Low Confidence Posts:** Articles lacking strong topical signals or covering unrepresented subjects are automatically routed with `flagged_low_confidence`.
-- **Duplicate & Near-Duplicate Isolation:** Articles grouped by content fingerprint were strictly constrained to individual splits, preventing train-test data leakage.
-"""
+        micro_f1 = float(f1_score(Y_true_bin, Y_pred_bin, average="micro", zero_division=0))
+        macro_f1 = float(f1_score(Y_true_bin, Y_pred_bin, average="macro", zero_division=0))
+        exact_match = exact_matches / len(split_arts)
+        p_at_3, r_at_3 = calculate_precision_recall_at_k(y_true_tags, pred_tags, k=3)
 
-    with open("reports/evaluation_report.md", "w", encoding="utf-8") as f:
-        f.write(report_md)
+        metrics_output[split_name] = {
+            "micro_f1": round(micro_f1, 4),
+            "macro_f1": round(macro_f1, 4),
+            "exact_match": round(exact_match, 4),
+            "precision@3": round(p_at_3, 4),
+            "recall@3": round(r_at_3, 4),
+            "articles": len(split_arts),
+            "avg_latency_ms": round(float(np.mean(latencies)) * 1000, 2)
+        }
 
-    print("\nEvaluation report written to reports/evaluation_report.md")
-    print("Benchmark results saved to reports/benchmark_results.json")
+        print(f"\n--- TF-IDF Model ({split_name.upper()} SPLIT) ---")
+        print(f"Micro-F1:     {micro_f1:.4f}")
+        print(f"Macro-F1:     {macro_f1:.4f}")
+        print(f"Exact Match:  {exact_match * 100:.1f}%")
+        print(f"Precision@3:  {p_at_3:.4f}")
+        print(f"Recall@3:     {r_at_3:.4f}")
+
+    # Write official predictions.csv for all 96 articles
+    prediction_rows = []
+    feedback_rows = []
+
+    for a in articles:
+        art_id = a["article_id"]
+        res = engine.predict(a["title"], a["content"], model_name="tfidf", article_id=art_id)
+        prediction_rows.append({
+            "article_id": art_id,
+            "category_ids": "|".join(res["category_ids"]),
+            "tags": "|".join(res["tags"])
+        })
+
+        # Format sample editorial feedback template row
+        gold_tags = labels_map[art_id]["tags"].split("|")
+        suggested = res["tags"]
+        accepted = [t for t in suggested if t in gold_tags]
+        rejected = [t for t in suggested if t not in gold_tags]
+        added = [t for t in gold_tags if t not in suggested]
+
+        feedback_rows.append({
+            "post_id": art_id,
+            "model_version": "tfidf_v1.0",
+            "suggested_tags": "|".join(suggested),
+            "suggestion_scores": json.dumps(res["scores"]),
+            "review_status": res["status"],
+            "accepted_tags": "|".join(accepted),
+            "rejected_tags": "|".join(rejected),
+            "added_approved_tags": "|".join(added),
+            "final_tags": "|".join(gold_tags),
+            "reviewer_id": "editor_1",
+            "reviewed_at": "2026-11-22T19:00:00Z"
+        })
+
+    with open("predictions.csv", "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=["article_id", "category_ids", "tags"])
+        w.writeheader()
+        w.writerows(prediction_rows)
+
+    with open("metrics.json", "w", encoding="utf-8") as f:
+        json.dump(metrics_output, f, indent=2)
+
+    with open("editor_feedback.csv", "w", newline="", encoding="utf-8") as f:
+        fieldnames = ["post_id", "model_version", "suggested_tags", "suggestion_scores", "review_status", "accepted_tags", "rejected_tags", "added_approved_tags", "final_tags", "reviewer_id", "reviewed_at"]
+        w = csv.DictWriter(f, fieldnames=fieldnames)
+        w.writeheader()
+        w.writerows(feedback_rows)
+
+    print("\nSaved predictions.csv, metrics.json, and editor_feedback.csv successfully.")
 
 
 if __name__ == "__main__":

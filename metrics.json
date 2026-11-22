@@ -1,0 +1,20 @@
+{
+  "validation": {
+    "micro_f1": 0.9375,
+    "macro_f1": 0.9524,
+    "exact_match": 0.8333,
+    "precision@3": 1.0,
+    "recall@3": 0.875,
+    "articles": 24,
+    "avg_latency_ms": 3.52
+  },
+  "test": {
+    "micro_f1": 0.9375,
+    "macro_f1": 0.9524,
+    "exact_match": 0.8333,
+    "precision@3": 1.0,
+    "recall@3": 0.875,
+    "articles": 24,
+    "avg_latency_ms": 3.38
+  }
+}
