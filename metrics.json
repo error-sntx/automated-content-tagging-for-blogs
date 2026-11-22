@@ -6,7 +6,7 @@
     "precision@3": 1.0,
     "recall@3": 0.875,
     "articles": 24,
-    "avg_latency_ms": 3.52
+    "avg_latency_ms": 3.66
   },
   "test": {
     "micro_f1": 0.9375,
@@ -15,6 +15,6 @@
     "precision@3": 1.0,
     "recall@3": 0.875,
     "articles": 24,
-    "avg_latency_ms": 3.38
+    "avg_latency_ms": 3.69
   }
 }
